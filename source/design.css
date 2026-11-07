@@ -466,3 +466,6 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 .team-tabs .navlink[aria-current="page"]{background:#fff}
 @media (max-width:900px){.role-grid{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:640px){.team-tabs{display:grid!important;grid-template-columns:1fr 1fr;border-radius:20px;overflow:visible;width:100%}.team-tabs .navlink{border-radius:16px;padding:0 6px}}
+
+.sub-h{margin:36px 0 10px;font-size:20px;letter-spacing:-.015em}
+@media (max-width:640px){.sub-h{margin:24px 0 8px;font-size:18px}}
