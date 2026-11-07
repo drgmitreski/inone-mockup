@@ -268,6 +268,91 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   .hero-band div.hero-media{font-size:clamp(28px,3vw,42px)!important;padding:32px 40px!important}
 }
 
+/* ---------- Mobile: simple, succinct, uncluttered ---------- */
+@media (max-width:640px){
+  /* header: one compact row (logo + audience switch); nav row below */
+  .hdr-cta{display:none!important}
+  .wm[style*="font-size: 30px"]{font-size:26px!important}
+  .seg a{min-height:32px;padding:0 13px;font-size:13.5px}
+  div[style*="padding: 12px 40px"]{padding-top:10px!important;padding-bottom:10px!important}
+  .navlink{min-height:40px;padding:0 14px;font-size:15px}
+  [role="note"] div{font-size:12px!important;padding:6px 20px!important}
+
+  /* side gutters + calmer vertical rhythm */
+  [style*="padding:"][style*=" 40px"]{padding-left:20px!important;padding-right:20px!important}
+  [style*="padding: 88px 40px"],[style*="padding: 80px 40px"],[style*="padding: 72px 40px"],[style*="padding: 64px 40px"],[style*="padding: 56px 40px"]{padding-top:36px!important;padding-bottom:40px!important}
+  [style*="padding: 48px 40px"],[style*="padding: 44px 40px"],[style*="padding: 36px 40px"]{padding-top:28px!important;padding-bottom:28px!important}
+  h1{font-size:clamp(30px,8.6vw,38px)!important;line-height:1.08!important}
+  h2{font-size:clamp(24px,6.6vw,28px)!important}
+  p{font-size:16px}
+
+  /* section hero banners: text only, no big photo */
+  .hero-band .hero-media{display:none!important}
+  .hero-band>div>div:first-child{padding:32px 20px 36px!important;gap:16px!important}
+  .hero-band p{font-size:16px!important}
+  .hero-band a{min-height:46px!important}
+
+  /* patient home: compact action rows, short photo */
+  .hero-split{gap:22px!important;padding-top:32px!important;padding-bottom:36px!important}
+  .hero-split a[style*="min-height: 170px"]{min-height:0!important;padding:16px 18px!important;flex-direction:row!important;align-items:center;gap:14px!important}
+  .hero-split a[style*="min-height: 170px"]>span:last-child{display:none}
+  .hero-split a[style*="min-height: 170px"]>span{font-size:17px!important}
+  .hero-split>div>div[style*="gap: 20px"]{gap:10px!important}
+  .hero-photo{max-height:240px!important;aspect-ratio:auto!important}
+
+  /* lists: one line per row, smaller thumbnails */
+  li[style*="justify-content: space-between"]{flex-wrap:nowrap!important;gap:12px!important;padding-top:14px!important;padding-bottom:14px!important}
+  li[style*="justify-content: space-between"]>a{white-space:nowrap;flex:none}
+  img[style*="width: 96px"]{width:64px!important;height:80px!important}
+  a[style*="padding: 24px 0"]{padding:16px 0!important;gap:14px!important}
+  [style*="column-gap: 48px"]{column-gap:0!important}
+
+  ol>li[style*="flex: 1 1 280px"]{flex:1 1 100%!important;padding:14px 0!important;gap:14px!important}
+  ol>li[style*="flex: 1 1 280px"]>span:first-child{min-width:22px;font-size:26px!important}
+  ol>li[style*="flex: 1 1 280px"] strong{font-size:16px!important;margin-bottom:2px!important}
+  [style*="padding: 40px;"]{padding:22px 20px!important;gap:10px 24px!important}
+  section[aria-label="Bulk billing"] div{padding-top:18px!important;padding-bottom:18px!important;gap:12px 16px!important;justify-content:flex-start!important}
+  section[aria-label="Bulk billing"] img{width:88px!important}
+  section[aria-label="Bulk billing"] strong{font-size:17px!important}
+  section[aria-label="Bulk billing"] span span{font-size:14px!important}
+  /* radiologists: compact profile rows */
+  article[style*="padding: 40px 0"][style]{display:grid!important;grid-template-columns:104px minmax(0,1fr);gap:4px 16px!important;padding:22px 0!important;align-items:start}
+  article[style*="padding: 40px 0"]>span[role="img"]{width:104px!important;height:130px!important;grid-row:1/3;grid-column:1;border-radius:16px!important}
+  article[style*="padding: 40px 0"]>span[role="img"]>span{background-size:cover!important;background-position:50% 12%!important}
+  article[style*="padding: 40px 0"]>div{display:contents!important}
+  article[style*="padding: 40px 0"] h3{grid-column:2;font-size:20px!important;align-self:end}
+  article[style*="padding: 40px 0"] h3+span{grid-column:2;font-size:14px;align-self:start}
+  article[style*="padding: 40px 0"] p{grid-column:1/-1;margin-top:10px!important;font-size:15px!important;line-height:1.55!important}
+  article[style*="padding: 40px 0"] ul{display:none!important}
+  article[style*="padding: 40px 0"] a{grid-column:1/-1}
+  /* research: titles only, no author/attribution lines */
+  li[data-who]{grid-template-columns:44px minmax(0,1fr)!important;gap:4px 12px!important;padding:14px 0!important}
+  li[data-who] a{font-size:15.5px!important}
+  li[data-who] span span:nth-child(3){display:none}
+  li[data-who] span span:nth-child(2){display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+  /* supporting copy the phone doesn't need */
+  .hide-xs{display:none!important}
+  [role="tablist"]{overflow-x:auto;flex-wrap:nowrap!important;scrollbar-width:none}
+  [role="tablist"]::-webkit-scrollbar{display:none}
+  [role="tab"],[data-tab]{flex:none;white-space:nowrap;padding:0 16px!important}
+
+  /* buttons: full-width, thumb-friendly */
+  .btn,a[style*="min-height: 48px"],a[style*="min-height: 46px"]{min-height:48px!important}
+
+  /* enquiry form */
+  .q-layout{gap:16px;padding-bottom:40px}
+  .q-card{padding:20px 16px 18px}
+  .q-side-card:first-child{display:none}
+  .q-nav{margin-top:18px;padding-top:16px}
+  .q-nav .btn{min-height:48px}
+  .q-opt{padding:14px}
+  .q-opt .d{display:none}
+  .q-opts{gap:8px}
+  .q-block{padding:16px 14px 2px}
+  .q-q{font-size:15px}
+  .q-sub{margin-bottom:18px;font-size:15px}
+}
+
 </style>
 </head>
 <body>
@@ -297,7 +382,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -407,7 +492,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -515,7 +600,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </div>
 
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals-patient">Patient portal</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -719,7 +804,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
@@ -951,7 +1036,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -1110,7 +1195,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </div>
 
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals-patient">Patient portal</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -1268,7 +1353,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </div>
 
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals-patient">Patient portal</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -1432,7 +1517,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </div>
 
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals-patient">Patient portal</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -1565,7 +1650,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </div>
 
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals-patient">Patient portal</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -1606,7 +1691,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 40px 40px 24px">
       <span class="eyebrow"><i></i>Screening enquiry</span>
       <h1 style="margin: 16px 0 12px; max-width: 900px; font-size: clamp(30px, 3.5vw, 46px); color: #14183A">Tell us a little about you. We’ll call with the details and the cost.</h1>
-      <p style="margin: 0; max-width: 720px; font-size: 17px; line-height: 1.55; color: #3B3F63">A few minutes of questions helps our team match you to the right scan and check it’s safe for you. There’s nothing to pay online. Screening is privately funded, so a team member will phone you to talk through your answers, tell you the full fee and find a time.</p>
+      <p class="hide-xs" style="margin: 0; max-width: 720px; font-size: 17px; line-height: 1.55; color: #3B3F63">A few minutes of questions helps our team match you to the right scan and check it’s safe for you. There’s nothing to pay online. Screening is privately funded, so a team member will phone you to talk through your answers, tell you the full fee and find a time.</p>
     </div>
 
     <div data-q class="q-layout">
@@ -1990,7 +2075,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
@@ -2147,7 +2232,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -2323,7 +2408,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
@@ -2846,7 +2931,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -3019,7 +3104,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -3155,7 +3240,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </div>
 
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="#portals-patient">Patient portal</a>
           <a class="btn btn-primary" href="#portals-patient">Book online</a>
         </div>
@@ -3273,7 +3358,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>

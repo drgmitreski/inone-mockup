@@ -31,19 +31,19 @@ body{margin:0}
       </div>
 
       <sc-if value="{{ isPatient }}" hint-placeholder-val="{{ true }}">
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="Portals.dc.html#patient">Patient portal</a>
           <a class="btn btn-primary" href="Portals.dc.html#patient">Book online</a>
         </div>
       </sc-if>
       <sc-if value="{{ isClin }}" hint-placeholder-val="{{ false }}">
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn hide-sm" href="Portals.dc.html#referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="Portals.dc.html#clinical">Clinical portal</a>
         </div>
       </sc-if>
       <sc-if value="{{ isNone }}" hint-placeholder-val="{{ false }}">
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
           <a class="btn btn-ghost hide-sm" href="Portals.dc.html">Portals</a>
           <a class="btn btn-primary" href="Portals.dc.html#patient">Book online</a>
         </div>
