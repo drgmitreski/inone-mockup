@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<script>(function(){var m=/[?&]theme=(\w+)/.exec(location.search);if(m)document.documentElement.setAttribute('data-theme',m[1])})()</script>
 <title>inOne Imaging — Website prototype</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <style>
 /* inOne Imaging — design layer (Stripe-inspired, inOne plum).
    Inlined into index.html by build.py. Tokens + a few component classes + global refinements
@@ -565,6 +566,73 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
   -webkit-mask-image:radial-gradient(ellipse closest-side at 58% 50%,#000 15%,rgba(0,0,0,.45) 60%,transparent 100%);mask-image:radial-gradient(ellipse closest-side at 58% 50%,#000 15%,rgba(0,0,0,.45) 60%,transparent 100%)}
 @media (max-width:640px){.clinic-bg{width:100%;opacity:.12}}
 
+/* ================= v2 theme (preview: ?theme=v2) =================
+   Flat navy + warm paper, serif headings, tight corners, no gradients or glow. */
+.photo-slot{display:none}
+html[data-theme="v2"]{
+  --ink:#16202E;--ink-2:#3C4757;--mute:#667085;--hair:#E3DFD6;--hair-2:#D8D3C8;--soft:#F4F2EC;--tint:#EEF1F6;
+  --plum:#214068;--plum-deep:#183052;--plum-night:#12213A;--lilac:#B3A6D4;--paper:#FBFAF7;
+  --sh-1:none;--sh-2:none;--sh-3:none}
+html[data-theme="v2"] body{background:var(--paper)}
+html[data-theme="v2"] div[style*="background: #F7F6FA"],html[data-theme="v2"] div[style*="background: #F7F6FB"]{background:var(--paper)!important}
+/* kill gradients and glow */
+html[data-theme="v2"] .mesh{background:var(--paper)!important}
+html[data-theme="v2"] section[style*="background: #EEEAF7"]:first-of-type{background:var(--soft)!important}
+html[data-theme="v2"] section[style*="color: #FFFFFF"][style*="background: #"]::before,html[data-theme="v2"] section[style*="color: #EEEDF6"][style*="background: #"]::before,html[data-theme="v2"] .door::before{display:none}
+html[data-theme="v2"] [style*="background-clip: text"]{background:none!important;color:#6C5CA8!important}
+/* serif headings */
+html[data-theme="v2"] h1,html[data-theme="v2"] h2,html[data-theme="v2"] h3{font-family:'Newsreader',Georgia,'Times New Roman',serif!important;font-weight:500!important;letter-spacing:-.012em!important}
+html[data-theme="v2"] h1{line-height:1.08!important;letter-spacing:-.02em!important}
+html[data-theme="v2"] .door>div:first-child>div>span:last-child{font-family:'Newsreader',Georgia,serif!important;font-weight:500!important;letter-spacing:-.01em!important}
+/* labels instead of pills */
+html[data-theme="v2"] .eyebrow{background:none;border:0;padding:0;border-radius:0;-webkit-backdrop-filter:none;backdrop-filter:none;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
+html[data-theme="v2"] .eyebrow i{display:none}
+/* tighter corners */
+html[data-theme="v2"] [style*="border-radius: 6px"]{border-radius:4px!important}
+html[data-theme="v2"] [style*="border-radius: 8px"],html[data-theme="v2"] [style*="border-radius: 10px"],html[data-theme="v2"] [style*="border-radius: 999px"]{border-radius:6px!important}
+html[data-theme="v2"] [style*="border-radius: 12px"]{border-radius:8px!important}
+html[data-theme="v2"] [style*="border-radius: 14px"],html[data-theme="v2"] [style*="border-radius: 16px"]{border-radius:10px!important}
+html[data-theme="v2"] [style*="border-radius: 18px"],html[data-theme="v2"] [style*="border-radius: 20px"],html[data-theme="v2"] [style*="border-radius: 24px"],html[data-theme="v2"] [style*="border-radius: 28px"]{border-radius:12px!important}
+html[data-theme="v2"] [style*="box-shadow"]{box-shadow:none!important}
+html[data-theme="v2"] .btn,html[data-theme="v2"] .btn-lg,html[data-theme="v2"] .navlink,html[data-theme="v2"] .q-pill span,html[data-theme="v2"] .q-chip,html[data-theme="v2"] .chip,html[data-theme="v2"] .team-tabs,html[data-theme="v2"] .fee-flag,html[data-theme="v2"] .q-tag,html[data-theme="v2"] .seg,html[data-theme="v2"] .seg a{border-radius:8px}
+html[data-theme="v2"] .q-card,html[data-theme="v2"] .door{border-radius:12px;box-shadow:none!important}
+html[data-theme="v2"] .fee-wrap,html[data-theme="v2"] .cost-steps li,html[data-theme="v2"] .role-card,html[data-theme="v2"] .q-side-card,html[data-theme="v2"] .q-block,html[data-theme="v2"] .q-opt,html[data-theme="v2"] .cost-note,html[data-theme="v2"] .q-alert,html[data-theme="v2"] .q-note,html[data-theme="v2"] .q-cost{border-radius:10px;box-shadow:none}
+html[data-theme="v2"] .q-card,html[data-theme="v2"] .fee-wrap,html[data-theme="v2"] .cost-steps li,html[data-theme="v2"] .role-card{border:1px solid var(--hair)}
+html[data-theme="v2"] .door-patient{background:#214068}
+html[data-theme="v2"] .door-clin{background:#16202E}
+/* flat navy buttons */
+html[data-theme="v2"] .btn-primary{background:var(--plum);box-shadow:none}
+html[data-theme="v2"] .btn-primary:active{background:#12213A}
+html[data-theme="v2"] .btn-ghost{background:#EEF1F6;border-color:#D5DCE7;color:var(--plum)}
+html[data-theme="v2"] .btn-ghost:active{background:#D2DAE7;border-color:#B9C5D8}
+html[data-theme="v2"] .btn-light{background:#EEF1F6;color:var(--plum-night)}
+html[data-theme="v2"] .btn-light:active{background:#D2DAE7}
+@media (hover:hover){
+  html[data-theme="v2"] .btn-primary:hover{background:var(--plum-deep)}
+  html[data-theme="v2"] .btn-ghost:hover{background:#E1E7F0;border-color:#C3CEDF;color:var(--plum)}
+  html[data-theme="v2"] .btn-light:hover{background:#E1E7F0}
+}
+html[data-theme="v2"] .q-opt,html[data-theme="v2"] .q-chip,html[data-theme="v2"] .q-pill span{background:#FBFAF7}
+html[data-theme="v2"] .navlink:hover,html[data-theme="v2"] .navlink[aria-current="page"]{background:#EEF1F6;color:var(--plum)}
+html[data-theme="v2"] nav[style*="backdrop-filter"]{background:var(--paper)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+/* brand purples in inline styles -> navy */
+html[data-theme="v2"] [style*="color: #5A4593"],html[data-theme="v2"] [style*="color: #4A3A84"],html[data-theme="v2"] [style*="color: #43337A"]{color:var(--plum)!important}
+html[data-theme="v2"] [style*="background: #5A4593"]{background:var(--plum)!important}
+html[data-theme="v2"] [style*="background: #4A3A84"]{background:#214068!important}
+html[data-theme="v2"] [style*="background: #EEEAF7"],html[data-theme="v2"] [style*="background: #E9E4F5"]{background:var(--tint)!important}
+html[data-theme="v2"] .photo-slot{display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;min-height:140px;border:1.5px dashed #C9C3B6;border-radius:10px;color:var(--mute);font:500 14px var(--font);background:#F4F2EC}
+@media (max-width:640px){
+  html[data-theme="v2"] .nav-scroll:not(:has(.navlink:nth-child(5))){background:#ECE8DF;border-radius:10px}
+  html[data-theme="v2"] .nav-scroll:not(:has(.navlink:nth-child(5))) .navlink{border-radius:8px}
+  html[data-theme="v2"] .nav-scroll:not(:has(.navlink:nth-child(5))) .navlink[aria-current="page"]{background:#fff;color:var(--ink)}
+  html[data-theme="v2"] .photo-slot{min-height:110px}
+}
+html[data-theme="v2"] #cmp{display:none!important}
+html[data-theme="v2"] [style*="background: #1E1A45"],html[data-theme="v2"] [style*="background: #141838"]{background:#12213A!important}
+html[data-theme="v2"] [style*="background: #3B2E6E"]{background:#1F3A5F!important}
+html[data-theme="v2"] [style*="background: #2C2254"]{background:#182F4D!important}
+html[data-theme="v2"] [style*="background: #F3F0FA"]{background:var(--soft)!important}
+
 </style>
 </head>
 <body>
@@ -644,7 +712,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
           <div style="padding: clamp(18px, 2.8vh, 32px) clamp(22px, 2.2vw, 32px); display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; justify-content: space-between; flex: 1">
             <div style="display: flex; flex-direction: column; gap: 6px">
               <span style="font-size: 14px; font-weight: 500; color: rgba(255,255,255,.72)">For patients</span>
-              <span style="font-weight: 500; font-size: clamp(22px, 2.9vh, 30px); letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap">Book, prepare, view.</span>
+              <span style="font-weight: 500; font-size: clamp(22px, 2.9vh, 30px); letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap">Book or view results</span>
             </div>
             <div class="door-btns" style="display: flex; flex-wrap: wrap; gap: 8px"><a class="btn btn-light btn-lg" href="#portals-patient" style="min-height: clamp(44px, 5.2vh, 52px)">Book a scan</a><a class="btn btn-lg door-ghost" href="#portals-patient" style="min-height: clamp(44px, 5.2vh, 52px)">View my images</a></div>
           </div>
@@ -654,7 +722,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
           <div style="padding: clamp(18px, 2.8vh, 32px) clamp(22px, 2.2vw, 32px); display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; justify-content: space-between; flex: 1">
             <div style="display: flex; flex-direction: column; gap: 6px">
               <span style="font-size: 14px; font-weight: 500; color: rgba(255,255,255,.72)">For referring doctors</span>
-              <span style="font-weight: 500; font-size: clamp(22px, 2.9vh, 30px); letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap">Refer, review, learn.</span>
+              <span style="font-weight: 500; font-size: clamp(22px, 2.9vh, 30px); letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap">Refer or view images</span>
             </div>
             <div class="door-btns" style="display: flex; flex-wrap: wrap; gap: 8px"><a class="btn btn-light btn-lg" href="#portals-clinician--referral" style="min-height: clamp(44px, 5.2vh, 52px)">Send a referral</a><a class="btn btn-lg door-ghost" href="#portals-clinician--clinical" style="min-height: clamp(44px, 5.2vh, 52px)">View images</a></div>
           </div>
@@ -853,7 +921,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
       <div style="display: flex; flex-direction: column; gap: 36px; min-width: 0">
       <div style="max-width: 640px">
         <p style="margin: 0 0 14px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #5A4593">PATIENT INFORMATION</p>
-        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(36px, 4vw, 52px); line-height: 1.06; letter-spacing: -0.03em">When you need answers, we’re here.</h1>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(36px, 4vw, 52px); line-height: 1.06; letter-spacing: -0.03em">Your visit, from booking to results</h1>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 20px">
         <a id="book" href="#portals-patient" style="flex: 1 1 200px; min-width: 0; box-sizing: border-box; text-decoration: none; background: #4A3A84; color: #FFFFFF; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px; min-height: 170px">
@@ -1059,7 +1127,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
     <div class="clin-hero" style="max-width: 1320px; margin: 0 auto; padding: 64px 40px 72px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
       <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
         <p class="hide-xs" style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #C3B6EA">FOR GPs, SPECIALISTS &amp; ALLIED HEALTH</p>
-        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 50px; line-height: 1.06; letter-spacing: -0.03em">Refer, review and learn — all in one.</h1>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 50px; line-height: 1.06; letter-spacing: -0.03em">Referring to inOne</h1>
         <ul class="hide-xs" style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 17px; color: #D9D8E8">
           <li style="display: flex; gap: 12px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C3B6EA" stroke-width="2.2" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg>Patient images, reports and priors in one place</li>
           <li style="display: flex; gap: 12px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C3B6EA" stroke-width="2.2" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg>Send eReferrals and see your patients’ upcoming appointments</li>
@@ -1448,7 +1516,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
     <div style="display: flex; flex-wrap: wrap; align-items: stretch">
       <div style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
         <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #D3C9EE">DIAGNOSIS</span>
-        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Accurate answers. Better decisions.</h1>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Diagnostic imaging</h1>
         <span aria-hidden="true" style="width: 56px; height: 2px; background: #D3C9EE"></span>
         <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #E3DCF3">Every scan reported by a specialist radiologist, close to home. Walk-ins welcome for X-ray and all referrals accepted.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -1607,7 +1675,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
     <div style="display: flex; flex-wrap: wrap; align-items: stretch">
       <div style="flex: 1 1 560px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
         <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #F0BDB2">INTERVENTION</span>
-        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Hospital-level procedures. Outpatient convenience.</h1>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Image-guided procedures, usually as day cases</h1>
         <span aria-hidden="true" style="width: 56px; height: 2px; background: #F0BDB2"></span>
         <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #F6DED8">Minimally invasive, image-guided treatment for pain, vein and musculoskeletal conditions — performed by interventional radiologists.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -1770,7 +1838,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
     <div style="display: flex; flex-wrap: wrap; align-items: stretch">
       <div style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
         <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #A9DBC4">SCREENING</span>
-        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Find disease early — when it’s silent, and treatable.</h1>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Find disease early, while it’s silent and treatable.</h1>
         <span aria-hidden="true" style="width: 56px; height: 2px; background: #A9DBC4"></span>
         <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #D6EBE0">Advanced imaging and screening programs for early detection and better outcomes, with a radiologist to explain every result.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -2326,7 +2394,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
   <section class="mesh">
     <div style="max-width: 1320px; margin: 0 auto; padding: 64px 40px 56px">
       <span class="eyebrow"><i></i>Costs &amp; billing</span>
-      <h1 style="margin: 18px 0 16px; max-width: 820px; font-size: clamp(34px, 4.6vw, 58px); color: #14183A">Clear fees. <span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">No surprises.</span></h1>
+      <h1 style="margin: 18px 0 16px; max-width: 820px; font-size: clamp(34px, 4.6vw, 58px); color: #14183A">What a scan costs at inOne</h1>
       <p style="margin: 0 0 28px; max-width: 660px; font-size: 19px; line-height: 1.55; color: #3B3F63">Most of our CT, ultrasound, X-ray, DEXA and MRI scans are bulk billed. Where there’s a gap, you’ll know the exact amount before you book, and it never changes on the day.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 12px">
         <a class="btn btn-primary btn-lg" href="#fees">See our fees</a>
@@ -2482,7 +2550,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
   <section class="mesh">
     <div style="max-width: 1320px; margin: 0 auto; padding: 40px 40px 24px">
       <span class="eyebrow"><i></i>Work with us</span>
-      <h1 style="margin: 16px 0 12px; max-width: 900px; font-size: clamp(30px, 3.8vw, 50px); color: #14183A">Help us build something <span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">different.</span></h1>
+      <h1 style="margin: 16px 0 12px; max-width: 900px; font-size: clamp(30px, 3.8vw, 50px); color: #14183A">Work with us</h1>
       <p class="hide-xs" style="margin: 0; max-width: 720px; font-size: 17px; line-height: 1.55; color: #3B3F63">inOne is a radiologist-led practice in Melbourne’s north and west, built around specialist reporting and patients who are looked after properly. Tell us about you and where you’d like to fit. There’s no vacancy list to wait for.</p>
     </div>
 
@@ -2646,7 +2714,7 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
     <div style="display: flex; flex-wrap: wrap; align-items: stretch">
       <div style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
         <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #B3C2E6">EDUCATION · FOR CLINICIANS</span>
-        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">CME built by radiologists, for radiologists — and the doctors who refer.</h1>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Education for radiologists and the doctors who refer</h1>
         <span aria-hidden="true" style="width: 56px; height: 2px; background: #B3C2E6"></span>
         <p style="margin: 0; max-width: 540px; font-size: 19px; line-height: 1.55; color: #D2DBEF">CPD-accredited lectures, conferences and workshops for consultants, registrars, GPs and specialists.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -2794,11 +2862,12 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
   <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 32px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
     <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
       <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR PEOPLE</span>
-      <h1 style="margin: 0; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">The people behind<br><span style="color: #5A4593">your care.</span></h1>
+      <h1 style="margin: 0; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Our people</h1>
     </div>
     <div style="flex: 1 1 420px; font-size: 18px; line-height: 1.55; color: #4A4D6A"><p style="margin: 0">Specialist radiologists, radiographers, sonographers and the team who keep everything running, working together across Roxburgh Park, Deer Park, Bacchus Marsh and Taylors Lakes.</p></div>
   </section>
 
+  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px"><div class="photo-slot" style="aspect-ratio: 21 / 7">Photo: whole-team group shot, one background, one light</div></div>
   <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px">
     <div class="team-tabs" role="tablist" aria-label="Our people">
       <button type="button" role="tab" class="navlink" data-people-tab="radiologists" aria-current="page">Radiologists</button>
@@ -3583,13 +3652,15 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
   <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 48px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
     <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
       <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR LOCATIONS</span>
-      <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Expert care,<br><span style="color: #5A4593">wherever you are.</span></h1>
+      <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Our clinics</h1>
     </div>
     <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 16px">
       <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #4A4D6A">Multiple convenient locations across Melbourne, with more opening soon. Find your nearest inOne Imaging clinic.</p>
       <p style="margin: 0; font-size: 16px; color: #4A4D6A">Not sure which clinic? Call our central booking line on <a href="tel:1300765456" style="font-weight: 700; color: #5A4593">1300 765 456</a> and we’ll find the closest available appointment.</p>
     </div>
   </section>
+
+  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px"><div class="photo-slot" style="aspect-ratio: 21 / 6">Photo: Roxburgh Park exterior or reception, wide</div></div>
 
   <section aria-label="Clinics" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 64px">
 
