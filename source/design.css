@@ -449,3 +449,5 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
 .fee-table td.fee-bb{color:#2F7D54;font-weight:500}
 @media (max-width:640px){.fee-table td.fee-bb{grid-column:1/3}}
+.fee-table td.fee-pob{color:var(--plum-deep);font-weight:500;white-space:nowrap}
+@media (max-width:640px){.fee-table tr{grid-template-columns:repeat(2,minmax(0,1fr))!important}.fee-table td.fee-bb{grid-column:auto!important}}
