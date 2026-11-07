@@ -30,6 +30,7 @@ blobs = {
  '76ebeba8a8709811e46acb2360a8a2a0': C+'edu_hero_real.jpg',
  '2a0f90512375763fea0f6c8378a0d6e1': C+'edu_live_real.jpg',
  'a1b2c3d4e5f60718293a4b5c6d7e8f90': C+'mohammed_ceo.jpg',
+ 'b2c3d4e5f6071829a3b4c5d6e7f8091a': C+'joey_radiographer.jpg',
 }
 def datauri(path):
     im = Image.open(path).convert('RGB')

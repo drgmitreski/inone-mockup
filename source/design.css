@@ -480,3 +480,42 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   .pm-cd{font-size:12px;padding:4px 10px}
   .pm-spec{font-size:13px}
 }
+
+/* ---------- Buttons: soft hue, darker on hover (desktop) and on press (touch) ---------- */
+.btn-ghost{background:#F3EFFB;border-color:#DDD3F3;color:var(--plum-deep)}
+.btn-light{background:#F3EFFB;color:var(--plum-night)}
+.door-ghost{background:rgba(255,255,255,.14)}
+.btn-primary:active{background:#2F2358;transform:none;box-shadow:none}
+.btn-ghost:active{background:#D9CFF2;border-color:#B9A9E4;color:var(--plum-deep);transform:none}
+.btn-light:active{background:#D5CAF0;transform:none;box-shadow:none}
+.door-ghost:active{background:rgba(20,16,50,.45);transform:none}
+@media (hover:hover){
+  .btn-primary:hover{background:#38295F}
+  .btn-ghost:hover{background:#E6DFF7;border-color:#C9BCEB;color:var(--plum-deep)}
+  .btn-light:hover{background:#E4DCF6}
+  .door-ghost:hover{background:rgba(20,16,50,.32)}
+}
+/* selectable cards, pills, chips */
+.q-opt,.q-chip,.q-pill span{background:#FAF8FE}
+@media (hover:hover){
+  .q-opt:hover:not(:has(input:checked)),.q-chip:hover:not(:has(input:checked)){background:#F1ECFB;border-color:#BFB0E6}
+  .q-pill:hover input:not(:checked)+span{background:#F1ECFB;border-color:#BFB0E6}
+}
+.q-opt:active:not(:has(input:checked)),.q-chip:active:not(:has(input:checked)){background:#E8E1F8}
+.q-pill:active input:not(:checked)+span{background:#E8E1F8}
+/* nav / switchers */
+.navlink:active,.seg a:active{background:#E2DAF4}
+@media (hover:hover){.navlink:hover{background:#EBE5F8}}
+/* inline-styled page buttons (section heroes, CTAs) */
+a[style*="min-height: 4"][style*="border-radius: 8px"][style*="background: #FFFFFF"]{background:#F4F0FB!important}
+a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px solid #FFFFFF"]{background:rgba(255,255,255,.12)}
+a[style*="min-height: 4"][style*="border-radius: 8px"]:active{filter:brightness(.82)}
+a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px solid #FFFFFF"]:active{background:rgba(20,16,50,.45);filter:none}
+@media (hover:hover){
+  a[style*="min-height: 4"][style*="border-radius: 8px"]:hover{filter:brightness(.92)}
+  a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px solid #FFFFFF"]:hover{background:rgba(20,16,50,.3);filter:none}
+}
+/* mobile: form card lines up with the 20px page margin */
+@media (max-width:640px){
+  .q-layout{padding-left:20px!important;padding-right:20px!important}
+}
