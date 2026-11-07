@@ -545,6 +545,9 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
 @media (max-width:360px){
   .nav-scroll:not(:has(.navlink:nth-child(5))) .navlink{padding:0 4px;font-size:13px}
 }
+@media (max-width:640px){
+  .nav-scroll:not(:has(.navlink:nth-child(5))){display:flex!important;flex-wrap:nowrap!important;justify-content:space-between!important;width:calc(100% + 12px)!important;max-width:none}
+}
 
 </style>
 </head>
