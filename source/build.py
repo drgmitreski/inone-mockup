@@ -62,8 +62,8 @@ def header(mode, active):
     ctx = {
       'isPatient': mode == 'patient', 'isClin': clin, 'isNone': mode == 'none',
       'topBg': '#141838' if clin else '#FFFFFF', 'topFg': '#FFFFFF' if clin else '#1A1F4A',
-      'topLine': '#141838' if clin else '#E3E1EC', 'logoInk': '#FFFFFF' if clin else '#1A1F4A',
-      'logoSub': '#C3B6EA' if clin else '#5A4593', 'subFg': '#B7B6CE' if clin else '#5E6080',
+      'topLine': '#141838' if clin else '#E3E1EC', 'logoInk': '#FFFFFF' if clin else '#214068',
+      'logoSub': '#B3A6D4', 'subFg': '#B7B6CE' if clin else '#5E6080',
       'segBg': '#2A2F5C' if clin else '#EEEAF7', 'segCls': 'seg-dark' if clin else '',
       'patBg': '#5A4593' if mode == 'patient' else 'transparent',
       'patFg': '#FFFFFF' if mode == 'patient' else ('#D9D8E8' if clin else '#1A1F4A'),

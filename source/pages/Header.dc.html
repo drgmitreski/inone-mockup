@@ -18,8 +18,8 @@ body{margin:0}
   <div style="background: {{ topBg }}; color: {{ topFg }}; border-bottom: 1px solid {{ topLine }}">
     <div style="max-width: 1320px; margin: 0 auto; padding: 12px 40px; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between">
       <a href="Main.dc.html" aria-label="inOne Imaging home" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; line-height: 1">
-        <span class="wm" style="font-size: 30px; font-weight: 700; color: {{ logoInk }}; display: flex; align-items: center">in<svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" style="margin: 0 1px"><g transform="rotate(-90 14 14)"><circle cx="14" cy="14" r="10" fill="none" stroke="#7A64C0" stroke-width="5.5" pathLength="100" stroke-dasharray="29.33 4" stroke-dashoffset="-2"></circle><circle cx="14" cy="14" r="10" fill="none" stroke="#C3B6EA" stroke-width="5.5" pathLength="100" stroke-dasharray="29.33 70.67" stroke-dashoffset="-2"></circle></g></svg>ne</span>
-        <span class="wm" style="font-size: 8.5px; font-weight: 600; letter-spacing: 0.5em; color: {{ logoSub }}; margin-top: 5px; padding-left: 5px">IMAGING</span>
+        <span class="wm" style="font-size: 30px; font-weight: 700; letter-spacing: -0.01em; color: {{ logoInk }}; display: flex; align-items: center">in<svg aria-hidden="true" width="25" height="25" viewBox="0 0 28 28" style="margin: 0 1px"><g transform="rotate(-90 14 14)" fill="none" stroke-width="6" pathLength="100"><circle cx="14" cy="14" r="10.5" stroke="#B3A6D4" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-2"></circle><circle cx="14" cy="14" r="10.5" stroke="{{ logoInk }}" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-35.3"></circle><circle cx="14" cy="14" r="10.5" stroke="{{ logoInk }}" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-68.7"></circle></g></svg>ne</span>
+        <span class="wm" style="font-size: 11px; font-weight: 700; letter-spacing: 0.27em; color: {{ logoSub }}; margin-top: 4px; padding-left: 0.27em">IMAGING</span>
       </a>
 
       <div role="group" aria-label="View site as" style="display: flex; align-items: center; gap: 12px; font-size: 14px">
@@ -108,8 +108,8 @@ class Component extends DCLogic {
       topBg: clin ? '#141838' : '#FFFFFF',
       topFg: clin ? '#FFFFFF' : '#1A1F4A',
       topLine: clin ? '#141838' : '#E3E1EC',
-      logoInk: clin ? '#FFFFFF' : '#1A1F4A',
-      logoSub: clin ? '#C3B6EA' : '#5A4593',
+      logoInk: clin ? '#FFFFFF' : '#214068',
+      logoSub: '#B3A6D4',
       subFg: clin ? '#B7B6CE' : '#5E6080',
       segBg: clin ? '#2A2F5C' : '#EEEAF7',
       patBg: mode === 'patient' ? '#5A4593' : 'transparent',
