@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Portals</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F6FA}
+a{color:inherit}a:hover{opacity:.85}
+</style>
+</helmet>
+<div style="font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1A1F4A; background: #F7F6FA; width: 100%">
+  <dc-import name="Header" mode="none" active="none" hint-size="100%,128px"></dc-import>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 40px">
+    <p style="margin: 0 0 14px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #5A4593">SECURE ONLINE ACCESS</p>
+    <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 52px; line-height: 1.06; letter-spacing: -0.03em">Choose your portal.</h1>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 0 40px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; align-items: stretch">
+
+    <!-- Patient -->
+    <article id="patient" style="background: #FFFFFF; border: 1px solid #E3E1EC; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column">
+      <div style="background: #4A3A84; color: #FFFFFF; padding: 30px 32px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; color: #D3C9EE">FOR PATIENTS</span>
+        <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Patient portal</h2>
+        <span style="color: #E3DCF3">Your appointments, images and reports.</span>
+      </div>
+      <div style="padding: 28px 32px; display: flex; flex-direction: column; gap: 22px; flex: 1">
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+          <li>Book, modify or cancel an appointment</li>
+          <li>Upload your referral</li>
+          <li>View, download and share your images and reports</li>
+          <li>Preparation instructions and forms</li>
+          <li>Pay your account</li>
+        </ul>
+        <form aria-label="Patient sign in" style="display: flex; flex-direction: column; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid #EEECF4">
+          <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px">Mobile number<input type="tel" style="min-height: 46px; border: 1.5px solid #C9C6D9; border-radius: 8px; padding: 0 14px; font: inherit; font-weight: 400"></label>
+          <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px">Date of birth<input type="text" placeholder="DD/MM/YYYY" style="min-height: 46px; border: 1.5px solid #C9C6D9; border-radius: 8px; padding: 0 14px; font: inherit; font-weight: 400"></label>
+          <button type="button" style="min-height: 48px; border: 0; border-radius: 8px; background: #4A3A84; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer">Send me a one-time code</button>
+          <span style="font-size: 14px; color: #5E6080">No password needed. Results are released after your doctor receives them. [CONFIRM POLICY]</span>
+        </form>
+      </div>
+    </article>
+
+    <!-- Referral -->
+    <article id="referral" style="background: #FFFFFF; border: 1px solid #E3E1EC; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column">
+      <div style="background: #141838; color: #FFFFFF; padding: 30px 32px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; color: #C3B6EA">FOR REFERRING PRACTICES</span>
+        <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Referral portal</h2>
+        <span style="color: #D9D8E8">Send and track referrals in one place.</span>
+      </div>
+      <div style="padding: 28px 32px; display: flex; flex-direction: column; gap: 22px; flex: 1">
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+          <li>Send an eReferral — imaging, screening or IR consult</li>
+          <li>Patient gets an SMS link to book online</li>
+          <li>Track referral status and upcoming appointments</li>
+          <li>Book on behalf of your patient</li>
+          <li>Order referral pads</li>
+        </ul>
+        <p style="margin: 0; font-size: 14px; color: #5E6080">Also works from Best Practice, Medical Director, Medical Objects and HealthLink. [CONFIRM INTEGRATIONS]</p>
+        <form aria-label="Referral portal sign in" style="display: flex; flex-direction: column; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid #EEECF4">
+          <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px">Email or provider number<input type="text" style="min-height: 46px; border: 1.5px solid #C9C6D9; border-radius: 8px; padding: 0 14px; font: inherit; font-weight: 400"></label>
+          <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px">Password<input type="password" style="min-height: 46px; border: 1.5px solid #C9C6D9; border-radius: 8px; padding: 0 14px; font: inherit; font-weight: 400"></label>
+          <button type="button" style="min-height: 48px; border: 0; border-radius: 8px; background: #141838; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer">Sign in</button>
+          <span style="font-size: 14px"><a href="#referral" style="font-weight: 600">Register your practice</a> · <a href="#referral">Forgot password</a></span>
+        </form>
+      </div>
+    </article>
+
+    <!-- Clinical -->
+    <article id="clinical" style="background: #FFFFFF; border: 1px solid #E3E1EC; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column">
+      <div style="background: #1D4A7E; color: #FFFFFF; padding: 30px 32px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; color: #C2D5EE">FOR CLINICIANS</span>
+        <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Clinical portal</h2>
+        <span style="color: #D6E3F4">Images, reports and education.</span>
+      </div>
+      <div style="padding: 28px 32px; display: flex; flex-direction: column; gap: 22px; flex: 1">
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+          <li>Diagnostic-quality images and priors</li>
+          <li>Results worklist with urgent findings flagged</li>
+          <li>Emergency (break-glass) access</li>
+          <li>Feedback on any report</li>
+          <li>Lectures, CPD record and certificates</li>
+        </ul>
+        <p style="margin: 0; font-size: 14px; color: #5E6080">Image viewing powered by Fujifilm Synapse. [PORTAL URL]</p>
+        <form aria-label="Clinical portal sign in" style="display: flex; flex-direction: column; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid #EEECF4">
+          <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px">Username<input type="text" style="min-height: 46px; border: 1.5px solid #C9C6D9; border-radius: 8px; padding: 0 14px; font: inherit; font-weight: 400"></label>
+          <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px">Password<input type="password" style="min-height: 46px; border: 1.5px solid #C9C6D9; border-radius: 8px; padding: 0 14px; font: inherit; font-weight: 400"></label>
+          <button type="button" style="min-height: 48px; border: 0; border-radius: 8px; background: #1D4A7E; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer">Sign in</button>
+          <span style="font-size: 14px"><a href="#clinical" style="font-weight: 600">Apply for access</a> · <a href="#clinical">Forgot password</a></span>
+        </form>
+      </div>
+    </article>
+  </section>
+
+  <section style="background: #FFFFFF; border-top: 1px solid #E3E1EC">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 32px 40px; display: flex; flex-wrap: wrap; gap: 12px 40px; color: #4A4D6A">
+      <span>Need help signing in? Call 1300 765 456</span>
+      <a href="Patient-Portal.dc.html" style="font-weight: 600">Patient information</a>
+      <a href="Clinician-Portal.dc.html" style="font-weight: 600">Referrer information</a>
+    </div>
+  </section>
+
+  <section aria-label="Bulk billing" style="background: #F0FAF3; border-top: 1px solid #D5EEDD; border-bottom: 1px solid #D5EEDD">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 28px 40px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: center">
+      <img src="/_blob/47ce6e5a4a0db0fcf7463dd3811c37fa" alt="Medicare Bulk Billing" style="width: 128px; height: auto; display: block; background: #FFFFFF; border-radius: 6px">
+      <span><strong style="display: block; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; color: #2F5A40">Bulk billing available</strong><span style="color: #3E6A4F; font-size: 17px">For eligible Medicare card holders</span></span>
+    </div>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

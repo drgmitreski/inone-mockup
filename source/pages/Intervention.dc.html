@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Intervention</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF7F5}
+a{color:inherit}a:hover{opacity:.85}
+</style>
+</helmet>
+<div style="font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1A1F4A; background: #FBF7F5; width: 100%">
+  <dc-import name="Header" mode="patient" active="procedures" hint-size="100%,128px"></dc-import>
+
+  <!-- Hero -->
+  <section class="hero-band" style="background: #6E1E16; color: #FFFFFF">
+    <div style="display: flex; flex-wrap: wrap; align-items: stretch">
+      <div style="flex: 1 1 560px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #F0BDB2">INTERVENTION</span>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Hospital-level procedures. Outpatient convenience.</h1>
+        <span aria-hidden="true" style="width: 56px; height: 2px; background: #F0BDB2"></span>
+        <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #F6DED8">Minimally invasive, image-guided treatment for pain, vein and musculoskeletal conditions — performed by interventional radiologists.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#procedures" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #6E1E16; border-radius: 8px; font-weight: 700">Our procedures</a>
+          <a href="Clinics.dc.html" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; border: 1.5px solid #FFFFFF; border-radius: 8px; font-weight: 600">Find a clinic</a>
+        </div>
+      </div>
+      <img class="hero-media" src="/_blob/97eee86d411cb8405565f1370dd9aaf1" alt="Interventional radiology suite with C-arm, procedure table and monitors" style="object-position: 40% 50%; flex: 1 1 440px; min-width: 0; width: 100%; min-height: 480px; height: auto; align-self: stretch; object-fit: cover; display: block">
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section style="background: #F6ECE8">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 44px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px 40px">
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9A3623" stroke-width="1.5" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8 8l8 8M16 8l-8 8"></path></svg><span><strong style="display: block; color: #9A3623; margin-bottom: 4px">Minimally invasive</strong><span style="color: #4A4D6A">A pinhole, not an incision. Less pain, faster recovery.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9A3623" stroke-width="1.5" style="flex: none"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg><span><strong style="display: block; color: #9A3623; margin-bottom: 4px">Image-guided precision</strong><span style="color: #4A4D6A">Real-time imaging for accuracy and safety.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9A3623" stroke-width="1.5" style="flex: none"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4.5 4.5-7 8-7s7 2.5 8 7"></path></svg><span><strong style="display: block; color: #9A3623; margin-bottom: 4px">Expert care</strong><span style="color: #4A4D6A">Fellowship-trained interventional radiologists.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9A3623" stroke-width="1.5" style="flex: none"><path d="M4 12h16M14 6l6 6-6 6"></path></svg><span><strong style="display: block; color: #9A3623; margin-bottom: 4px">Back to life sooner</strong><span style="color: #4A4D6A">Usually a day procedure, home the same day.</span></span></div>
+    </div>
+  </section>
+
+  <!-- Procedures -->
+  <section id="procedures" style="max-width: 1320px; margin: 0 auto; padding: 80px 40px 64px">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid #6E1E16">
+      <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px; letter-spacing: -0.02em; color: #6E1E16">In-clinic procedures</h2>
+      <a href="#procedures" style="color: #9A3623; font-weight: 600">View all procedures →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); column-gap: 48px">
+      <a href="#procedures" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E6DCD8"><span aria-hidden="true" style="width: 96px; height: 124px; border-radius: 6px; flex: none; background: #6E1E16; color: #F0BDB2; display: flex; align-items: center; justify-content: center"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="9" y="2.5" width="6" height="4" rx="1.2"></rect><rect x="9" y="8.5" width="6" height="4" rx="1.2"></rect><rect x="9" y="14.5" width="6" height="4" rx="1.2"></rect><path d="M12 19v3M6 10.5h3M15 10.5h3"></path></svg></span><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #9A3623; font-size: 18px">Complex pain intervention</strong><span style="color: #4A4D6A; line-height: 1.5">CT and ultrasound-guided nerve root blocks, epidurals and facet joint procedures.</span><span style="color: #9A3623; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="#procedures" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E6DCD8"><img src="/_blob/a80d37ad97baf6234f1606dc67bc9639" alt="Venogram of the leg" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #9A3623; font-size: 18px">Varicose vein treatment</strong><span style="color: #4A4D6A; line-height: 1.5">Endovenous laser ablation for venous reflux. Walk in, walk out.</span><span style="color: #9A3623; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="#procedures" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E6DCD8"><span aria-hidden="true" style="width: 96px; height: 124px; border-radius: 6px; flex: none; background: #6E1E16; color: #F0BDB2; display: flex; align-items: center; justify-content: center"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4.5"></circle><circle cx="12" cy="12" r="1.2"></circle><path d="M2 22l7.5-7.5"></path></svg></span><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #9A3623; font-size: 18px">Musculoskeletal ablation</strong><span style="color: #4A4D6A; line-height: 1.5">Image-guided ablation for chronic joint and soft-tissue pain. [CONFIRM SCOPE]</span><span style="color: #9A3623; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="#procedures" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E6DCD8"><span aria-hidden="true" style="width: 96px; height: 124px; border-radius: 6px; flex: none; background: #6E1E16; color: #F0BDB2; display: flex; align-items: center; justify-content: center"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M18 2l4 4M20 4l-9.5 9.5M14 6l4 4M7.5 12.5l4 4M9 11l-6 6v4h4l6-6"></path></svg></span><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #9A3623; font-size: 18px">Sclerotherapy</strong><span style="color: #4A4D6A; line-height: 1.5">Ultrasound-guided foam sclerotherapy for varicose and spider veins.</span><span style="color: #9A3623; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+    </div>
+  </section>
+
+  <!-- Hospital pathways -->
+  <section id="hospital" style="background: #F6ECE8">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+      <div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; color: #9A3623">HOSPITAL PATHWAYS</span>
+        <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.12; letter-spacing: -0.02em; color: #6E1E16">Embolisation procedures, through our public hospital partners.</h2>
+        <p style="margin: 0; color: #4A4D6A; font-size: 17px; line-height: 1.55">We see you in clinic, complete your imaging and work-up, then refer you directly to an interventional radiology team at a public hospital — and stay in touch with your doctor throughout. [CONFIRM HOSPITAL PARTNERS]</p>
+        <a href="Portals.dc.html#patient" style="align-self: flex-start; text-decoration: none; min-height: 46px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 20px; background: #9A3623; color: #FFFFFF; border-radius: 8px; font-weight: 600">Ask about a pathway</a>
+      </div>
+      <ul style="flex: 2 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 40px">
+        <li style="display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid #E2D2CC"><img src="/_blob/8f401ec21bd0d90a2526a6dc2aefd045" alt="Uterine angiogram" style="width: 64px; height: 80px; object-fit: cover; border-radius: 6px; flex: none"><span><strong style="display: block; color: #9A3623">Uterine artery embolisation</strong><span style="color: #4A4D6A">Fibroids and adenomyosis</span></span></li>
+        <li style="display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid #E2D2CC"><img src="/_blob/b2aa635de34454597abc4cf9baf65540" alt="Prostate angiogram" style="width: 64px; height: 80px; object-fit: cover; border-radius: 6px; flex: none"><span><strong style="display: block; color: #9A3623">Prostate artery embolisation</strong><span style="color: #4A4D6A">Enlarged prostate (BPH)</span></span></li>
+        <li style="display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid #E2D2CC"><img src="/_blob/4c7f1e74760b31362d05da69159e4006" alt="Pelvic venogram" style="width: 64px; height: 80px; object-fit: cover; border-radius: 6px; flex: none"><span><strong style="display: block; color: #9A3623">Ovarian vein embolisation</strong><span style="color: #4A4D6A">Pelvic venous congestion</span></span></li>
+        <li style="display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid #E2D2CC"><img src="/_blob/ab7c4d5801ba22af43902a9521a7fb54" alt="Venogram" style="width: 64px; height: 80px; object-fit: cover; border-radius: 6px; flex: none"><span><strong style="display: block; color: #9A3623">Varicocele embolisation</strong><span style="color: #4A4D6A">Scrotal varicose veins</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pathway -->
+  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 80px">
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); background: #FFFFFF; border: 1px solid #E6DCD8; border-radius: 14px">
+      <li style="padding: 24px 28px"><strong style="color: #9A3623">1 · Referral</strong><br><span style="color: #4A4D6A">From your GP or specialist</span></li>
+      <li style="padding: 24px 28px"><strong style="color: #9A3623">2 · Consultation</strong><br><span style="color: #4A4D6A">Meet your interventional radiologist</span></li>
+      <li style="padding: 24px 28px"><strong style="color: #9A3623">3 · Procedure</strong><br><span style="color: #4A4D6A">In our clinic, or at a partner hospital</span></li>
+      <li style="padding: 24px 28px"><strong style="color: #9A3623">4 · Follow-up</strong><br><span style="color: #4A4D6A">Review, and a letter to your doctor</span></li>
+    </ol>
+  </section>
+
+  <!-- CTA band -->
+  <section style="background: #6E1E16; color: #FFFFFF">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 48px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
+      <div><h2 style="margin: 0 0 6px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Ready to take the next step?</h2><span style="color: #F6DED8">Our team will help you understand your options.</span></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a href="Portals.dc.html#patient" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #6E1E16; border-radius: 8px; font-weight: 700">Book a consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section style="max-width: 1320px; margin: 0 auto; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px 32px; color: #4A4D6A">
+    <span>Expert interventional radiologists</span>
+    <span>State-of-the-art imaging technology</span>
+    <span>Outpatient care, hospital standards</span>
+    <span>Compassionate, personal care</span>
+  </section>
+
+  <section aria-label="Bulk billing" style="background: #F0FAF3; border-top: 1px solid #D5EEDD; border-bottom: 1px solid #D5EEDD">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 28px 40px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: center">
+      <img src="/_blob/47ce6e5a4a0db0fcf7463dd3811c37fa" alt="Medicare Bulk Billing" style="width: 128px; height: auto; display: block; background: #FFFFFF; border-radius: 6px">
+      <span><strong style="display: block; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; color: #2F5A40">Bulk billing available</strong><span style="color: #3E6A4F; font-size: 17px">For eligible Medicare card holders</span></span>
+    </div>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

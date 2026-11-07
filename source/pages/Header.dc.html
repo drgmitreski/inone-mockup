@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Site header (patient / clinician)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="display: contents; font-family: 'Inter', system-ui, sans-serif; color: #14183A">
+  <!-- Top bar: changes with audience -->
+  <div style="background: {{ topBg }}; color: {{ topFg }}; border-bottom: 1px solid {{ topLine }}">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 12px 40px; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between">
+      <a href="Main.dc.html" aria-label="inOne Imaging home" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; line-height: 1">
+        <span class="wm" style="font-size: 30px; font-weight: 700; color: {{ logoInk }}; display: flex; align-items: center">in<svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" style="margin: 0 1px"><g transform="rotate(-90 14 14)"><circle cx="14" cy="14" r="10" fill="none" stroke="#7A64C0" stroke-width="5.5" pathLength="100" stroke-dasharray="29.33 4" stroke-dashoffset="-2"></circle><circle cx="14" cy="14" r="10" fill="none" stroke="#C3B6EA" stroke-width="5.5" pathLength="100" stroke-dasharray="29.33 70.67" stroke-dashoffset="-2"></circle></g></svg>ne</span>
+        <span class="wm" style="font-size: 8.5px; font-weight: 600; letter-spacing: 0.5em; color: {{ logoSub }}; margin-top: 5px; padding-left: 5px">IMAGING</span>
+      </a>
+
+      <div role="group" aria-label="View site as" style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+        <span class="hide-sm" style="color: {{ subFg }}">View site as</span>
+        <span class="seg {{ segCls }}">
+          <a href="Patient-Portal.dc.html" aria-current="{{ patCur }}">Patient</a>
+          <a href="Clinician-Portal.dc.html" aria-current="{{ clinCur }}">Clinician</a>
+        </span>
+      </div>
+
+      <sc-if value="{{ isPatient }}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn btn-ghost hide-sm" href="Portals.dc.html#patient">Patient portal</a>
+          <a class="btn btn-primary" href="Portals.dc.html#patient">Book online</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isClin }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn hide-sm" href="Portals.dc.html#referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
+          <a class="btn btn-light" href="Portals.dc.html#clinical">Clinical portal</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isNone }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn btn-ghost hide-sm" href="Portals.dc.html">Portals</a>
+          <a class="btn btn-primary" href="Portals.dc.html#patient">Book online</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+
+  <!-- Clinician notice -->
+  <sc-if value="{{ isClin }}" hint-placeholder-val="{{ false }}">
+    <div role="note" style="background: #F6ECCB; color: #3A2E05; font-size: 13px; line-height: 1.45">
+      <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px">For qualified health professionals. This section contains clinical material that may be misunderstood without professional training. Patients should seek advice from their doctor.</div>
+    </div>
+  </sc-if>
+
+  <!-- Audience menu (sticky) -->
+  <nav aria-label="{{ navLabel }}" style="position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.86); -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid #E4E2EE">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
+      <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
+        <sc-for list="{{ links }}" as="l" hint-placeholder-count="6">
+          <a class="navlink" href="{{ l.href }}" aria-current="{{ l.cur }}">{{ l.label }}</a>
+        </sc-for>
+      </div>
+      <a class="hide-sm" href="Clinics.dc.html" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
+    </div>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mode":{"editor":"enum","options":["none","patient","clinician"],"default":"none"},"active":{"editor":"enum","options":["none","home","radiologists","about","imaging","procedures","screening","costs","refer","pathways","programs","education","support","clinics"],"default":"none"},"$preview":{"width":1440,"height":128}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const mode = this.props.mode ?? 'none';
+    const active = this.props.active ?? 'none';
+    const clin = mode === 'clinician';
+    const sets = {
+      none: [
+        { id: 'radiologists', label: 'Our radiologists', href: 'Radiologists.dc.html' },
+        { id: 'clinics', label: 'Our clinics', href: 'Clinics.dc.html' },
+        { id: 'about', label: 'About us', href: 'About.dc.html' }
+      ],
+      patient: [
+        { id: 'home', label: 'Patient home', href: 'Patient-Portal.dc.html' },
+        { id: 'imaging', label: 'Imaging & scans', href: 'Diagnosis.dc.html' },
+        { id: 'procedures', label: 'Procedures', href: 'Intervention.dc.html' },
+        { id: 'screening', label: 'Screening', href: 'Screening.dc.html' },
+        { id: 'costs', label: 'Costs & billing', href: 'Patient-Portal.dc.html' },
+        { id: 'radiologists', label: 'Our radiologists', href: 'Radiologists.dc.html' }
+      ],
+      clinician: [
+        { id: 'home', label: 'Clinician home', href: 'Clinician-Portal.dc.html' },
+        { id: 'refer', label: 'Refer a patient', href: 'Portals.dc.html#referral' },
+        { id: 'pathways', label: 'Procedures & pathways', href: 'Clinician-Portal.dc.html#tab-intervention' },
+        { id: 'programs', label: 'Screening programs', href: 'Clinician-Portal.dc.html#tab-screening' },
+        { id: 'education', label: 'Education & CPD', href: 'Education.dc.html' },
+        { id: 'support', label: 'Referrer support', href: 'Clinician-Portal.dc.html' }
+      ]
+    };
+    const accent = clin ? '#1D4A7E' : '#5A4593';
+    return {
+      isPatient: mode === 'patient',
+      isClin: clin,
+      isNone: mode === 'none',
+      topBg: clin ? '#141838' : '#FFFFFF',
+      topFg: clin ? '#FFFFFF' : '#1A1F4A',
+      topLine: clin ? '#141838' : '#E3E1EC',
+      logoInk: clin ? '#FFFFFF' : '#1A1F4A',
+      logoSub: clin ? '#C3B6EA' : '#5A4593',
+      subFg: clin ? '#B7B6CE' : '#5E6080',
+      segBg: clin ? '#2A2F5C' : '#EEEAF7',
+      patBg: mode === 'patient' ? '#5A4593' : 'transparent',
+      patFg: mode === 'patient' ? '#FFFFFF' : (clin ? '#D9D8E8' : '#1A1F4A'),
+      clinBg: clin ? '#FFFFFF' : 'transparent',
+      clinFg: clin ? '#141838' : '#1A1F4A',
+      patCur: mode === 'patient' ? 'page' : 'false',
+      clinCur: clin ? 'page' : 'false',
+      navLabel: clin ? 'Clinician menu' : (mode === 'patient' ? 'Patient menu' : 'Main menu'),
+      links: (sets[mode] || sets.none).map((d) => ({
+        href: d.href,
+        label: d.label,
+        color: active === d.id ? accent : '#1A1F4A',
+        weight: active === d.id ? '700' : '500',
+        line: active === d.id ? accent : 'transparent'
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

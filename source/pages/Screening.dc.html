@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Screening</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6FAF7}
+a{color:inherit}a:hover{opacity:.85}
+</style>
+</helmet>
+<div style="font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1A1F4A; background: #F6FAF7; width: 100%">
+  <dc-import name="Header" mode="patient" active="screening" hint-size="100%,128px"></dc-import>
+
+  <section class="hero-band" style="background: #1F4A36; color: #FFFFFF">
+    <div style="display: flex; flex-wrap: wrap; align-items: stretch">
+      <div style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #A9DBC4">SCREENING</span>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Find disease early — when it’s silent, and treatable.</h1>
+        <span aria-hidden="true" style="width: 56px; height: 2px; background: #A9DBC4"></span>
+        <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #D6EBE0">Advanced imaging and screening programs for early detection and better outcomes, with a radiologist to explain every result.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#programs" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #1F4A36; border-radius: 8px; font-weight: 700">Our screening programs</a>
+          <a href="#eligible" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; border: 1.5px solid #FFFFFF; border-radius: 8px; font-weight: 600">Am I eligible?</a>
+        </div>
+      </div>
+      <img class="hero-media" src="/_blob/f748bbfaa0051b374f7c7117d8afeeb7" alt="Radiographer positioning a patient in a CT scanner" style="object-position: 62% 40%; flex: 1 1 380px; min-width: 0; width: 100%; min-height: 480px; height: auto; align-self: stretch; object-fit: cover; display: block">
+    </div>
+  </section>
+
+  <section style="background: #E8F2EC">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 44px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px 40px">
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#355E46" stroke-width="1.5" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg><span><strong style="display: block; color: #355E46; margin-bottom: 4px">Early detection</strong><span style="color: #4A4D6A">Find problems before symptoms appear.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#355E46" stroke-width="1.5" style="flex: none"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4.5 4.5-7 8-7s7 2.5 8 7"></path></svg><span><strong style="display: block; color: #355E46; margin-bottom: 4px">Personalised risk</strong><span style="color: #4A4D6A">Screening matched to your age, history and risk.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#355E46" stroke-width="1.5" style="flex: none"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg><span><strong style="display: block; color: #355E46; margin-bottom: 4px">Complete care</strong><span style="color: #4A4D6A">From scan to follow-up, with results to your GP.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#355E46" stroke-width="1.5" style="flex: none"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"></path></svg><span><strong style="display: block; color: #355E46; margin-bottom: 4px">Peace of mind</strong><span style="color: #4A4D6A">Knowledge today for a healthier tomorrow.</span></span></div>
+    </div>
+  </section>
+
+  <section id="programs" style="max-width: 1320px; margin: 0 auto; padding: 80px 40px 64px">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid #1F4A36">
+      <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px; letter-spacing: -0.02em; color: #1F4A36">Our screening programs</h2>
+      <a href="#programs" style="color: #355E46; font-weight: 600">View all programs →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); column-gap: 48px">
+      <a href="Screening-Enquiry.dc.html#lung" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #D8E4DC"><img src="/_blob/a08e16d0250f826bdd41dd9640a59874" alt="CT image of the lungs" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #355E46; font-size: 18px">Lung health</strong><span style="color: #4A4D6A; line-height: 1.5">Low-dose CT for early detection of lung cancer.</span><span style="color: #355E46; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="Screening-Enquiry.dc.html#heart" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #D8E4DC"><img src="/_blob/cbbb73d220aab2050d6b2d747fe014db" alt="3D rendering of the heart and coronary arteries" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #355E46; font-size: 18px">Heart health</strong><span style="color: #4A4D6A; line-height: 1.5">Assess your heart disease risk with CT calcium scoring.</span><span style="color: #355E46; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="Screening-Enquiry.dc.html#vascular" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #D8E4DC"><img src="/_blob/87321787c845e212022fafae5d524a0c" alt="CT angiogram of the aorta and leg arteries" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #355E46; font-size: 18px">Vascular screening</strong><span style="color: #4A4D6A; line-height: 1.5">Aneurysms, carotid and peripheral artery disease.</span><span style="color: #355E46; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="#programs" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #D8E4DC"><img src="/_blob/dd0afc9bee66b11276785156a43e7783" alt="CT image of the chest" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #355E46; font-size: 18px">Oncology screening</strong><span style="color: #4A4D6A; line-height: 1.5">Early detection when treatment is most effective.</span><span style="color: #355E46; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="Screening-Enquiry.dc.html#womens" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #D8E4DC"><img src="/_blob/89db4104753359964200692de6d5b6a4" alt="Pelvic ultrasound image" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #355E46; font-size: 18px">Women’s health</strong><span style="color: #4A4D6A; line-height: 1.5">Specialised imaging for women’s health and wellbeing.</span><span style="color: #355E46; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="Screening-Enquiry.dc.html#abdominal" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #D8E4DC"><img src="/_blob/8ef3b369c862572a96ad80fd1c1148d3" alt="CT image of the abdomen" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #355E46; font-size: 18px">Abdominal screening</strong><span style="color: #4A4D6A; line-height: 1.5">Comprehensive screening for abdominal organ health.</span><span style="color: #355E46; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+    </div>
+  </section>
+
+  <section id="eligible" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 80px">
+    <div style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid #D8E4DC; border-radius: 14px; padding: 30px 32px">
+      <div style="max-width: 640px"><strong style="font-size: 20px; color: #1F4A36">What does screening cost?</strong><p style="margin: 6px 0 0; color: #4A4D6A; line-height: 1.5">Screening scans are privately funded, with no Medicare rebate. Send an enquiry and our team will phone you with the fee and whether you need a referral. [CONFIRM PER PROGRAM]</p></div>
+      <a href="Screening-Enquiry.dc.html" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #355E46; color: #FFFFFF; border-radius: 8px; font-weight: 700">Start an enquiry</a>
+    </div>
+  </section>
+
+  <section style="background: #1F4A36; color: #FFFFFF">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 48px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
+      <div><h2 style="margin: 0 0 6px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Prevention is powerful.</h2><span style="color: #D6EBE0">Take control of your health with our screening programs.</span></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a href="Screening-Enquiry.dc.html" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #1F4A36; border-radius: 8px; font-weight: 700">Enquire about screening</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px 32px; color: #4A4D6A">
+    <span>Evidence-based screening</span>
+    <span>Advanced imaging technology</span>
+    <span>Experienced radiologists</span>
+    <span>Tailored to your needs</span>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2150}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

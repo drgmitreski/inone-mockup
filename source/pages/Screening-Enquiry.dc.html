@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Screening enquiry</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F6FB}
+a{color:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FB; width: 100%">
+  <dc-import name="Header" mode="patient" active="screening" hint-size="100%,128px"></dc-import>
+
+  <section class="mesh" style="position: relative">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 40px 40px 24px">
+      <span class="eyebrow"><i></i>Screening enquiry</span>
+      <h1 style="margin: 16px 0 12px; max-width: 900px; font-size: clamp(30px, 3.5vw, 46px); color: #14183A">Tell us a little about you. We’ll call with the details and the cost.</h1>
+      <p style="margin: 0; max-width: 720px; font-size: 17px; line-height: 1.55; color: #3B3F63">A few minutes of questions helps our team match you to the right scan and check it’s safe for you. There’s nothing to pay online. Screening is privately funded, so a team member will phone you to talk through your answers, tell you the full fee and find a time.</p>
+    </div>
+
+    <div data-q class="q-layout">
+      <div class="q-main">
+        <div class="q-card" data-form-card>
+          <div class="q-progress" aria-label="Progress">
+            <ol data-progress>
+              <li><b>1</b><span>Scan</span></li>
+              <li><b>2</b><span>About you</span></li>
+              <li><b>3</b><span>Your health</span></li>
+              <li><b>4</b><span>Safety</span></li>
+              <li><b>5</b><span>Referral</span></li>
+            </ol>
+            <div class="q-bar"><i data-bar></i></div>
+          </div>
+
+          <form novalidate aria-label="Screening enquiry questionnaire">
+
+            <!-- STEP 1 -->
+            <div data-step>
+              <h2 class="q-h" tabindex="-1">What would you like to know more about?</h2>
+              <p class="q-sub">Choose as many as you like. You don’t need to be sure. “Not sure” is a good answer.</p>
+              <div class="q-opts" data-req="svc">
+                <label class="q-opt"><input type="checkbox" name="svc" value="brain" data-label="Brain aneurysm / AVM screening MRI"><span class="ind"></span><span><span class="t">Brain aneurysm / AVM screening MRI</span><span class="d">An MRI scan of the blood vessels in your brain. No radiation.</span></span></label>
+                <label class="q-opt"><input type="checkbox" name="svc" value="womens" data-label="Women’s health check"><span class="ind"></span><span><span class="t">Women’s health check</span><span class="d">Pelvic and breast imaging matched to your history.</span></span></label>
+                <label class="q-opt"><input type="checkbox" name="svc" value="heart" data-label="Heart health (CT calcium score)"><span class="ind"></span><span><span class="t">Heart health</span><span class="d">CT calcium score to assess heart disease risk.</span></span></label>
+                <label class="q-opt"><input type="checkbox" name="svc" value="lung" data-label="Lung health (low-dose CT)"><span class="ind"></span><span><span class="t">Lung health</span><span class="d">Low-dose CT for early detection of lung cancer.</span></span></label>
+                <label class="q-opt"><input type="checkbox" name="svc" value="vascular" data-label="Vascular screening"><span class="ind"></span><span><span class="t">Vascular screening</span><span class="d">Aorta, carotid and leg arteries.</span></span></label>
+                <label class="q-opt"><input type="checkbox" name="svc" value="abdominal" data-label="Abdominal screening"><span class="ind"></span><span><span class="t">Abdominal screening</span><span class="d">Screening for abdominal organ health.</span></span></label>
+                <label class="q-opt q-opt-wide"><input type="checkbox" name="svc" value="unsure" data-label="Not sure, I’d like advice"><span class="ind"></span><span><span class="t">I’m not sure, I’d like advice</span><span class="d">We’ll talk through the options on the phone.</span></span></label>
+              </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div data-step hidden>
+              <h2 class="q-h" tabindex="-1">About you</h2>
+              <p class="q-sub">So we know who we’re calling and which clinic suits you.</p>
+              <div class="q-grid">
+                <div class="q-field"><label for="q-fn">First name</label><input id="q-fn" name="fn" type="text" autocomplete="given-name" required></div>
+                <div class="q-field"><label for="q-ln">Last name</label><input id="q-ln" name="ln" type="text" autocomplete="family-name" required></div>
+                <div class="q-field"><label for="q-dob">Date of birth</label><input id="q-dob" name="dob" type="text" inputmode="numeric" placeholder="DD/MM/YYYY" maxlength="10" autocomplete="bday" data-v="dob" required></div>
+                <div class="q-field"><label for="q-mob">Mobile number</label><input id="q-mob" name="mob" type="tel" autocomplete="tel" data-v="phone" required></div>
+                <div class="q-field q-span"><label for="q-em">Email <em>(optional)</em></label><input id="q-em" name="em" type="email" autocomplete="email" data-v="email"></div>
+              </div>
+              <div class="q-group" data-req="sex">
+                <div class="q-q">Sex at birth <span class="q-why">Helps us choose the right questions and protocols</span></div>
+                <div class="q-pills">
+                  <label class="q-pill"><input type="radio" name="sex" value="female" data-label="Female"><span>Female</span></label>
+                  <label class="q-pill"><input type="radio" name="sex" value="male" data-label="Male"><span>Male</span></label>
+                  <label class="q-pill"><input type="radio" name="sex" value="other" data-label="Another / prefer not to say"><span>Another / prefer not to say</span></label>
+                </div>
+              </div>
+              <div class="q-grid">
+                <div class="q-field"><label for="q-clinic">Preferred clinic</label>
+                  <select id="q-clinic" name="clinic"><option value="No preference">No preference</option><option>Roxburgh Park</option><option>Deer Park</option><option>Bacchus Marsh</option><option>Taylors Lakes</option></select></div>
+                <div class="q-field"><label for="q-time">Best time for us to call</label>
+                  <select id="q-time" name="time"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div data-step hidden>
+              <h2 class="q-h" tabindex="-1">Your health</h2>
+              <p class="q-sub">Answer what you can. “Not sure” is fine, and we’ll go through it together on the call.</p>
+
+              <!-- Brain / AVM -->
+              <div class="q-block" data-when="svc:brain">
+                <div class="q-block-h"><span class="q-tag">Brain aneurysm / AVM MRI</span></div>
+                <div class="q-group" data-req="urgent">
+                  <div class="q-q">In the past few days, have you had a sudden, severe headache, a seizure or blackout, or new weakness, numbness, speech or vision changes?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="urgent" value="no"><span>No</span></label>
+                    <label class="q-pill"><input type="radio" name="urgent" value="yes"><span>Yes</span></label>
+                  </div>
+                </div>
+                <div class="q-alert" role="alert" data-when="urgent:yes" hidden>
+                  <strong>Please don’t wait for an enquiry.</strong>
+                  <span>These can be signs of an emergency. Call <b>000</b> or go to your nearest emergency department now. Screening is for people without symptoms.</span>
+                </div>
+                <div data-when="urgent:no">
+                  <div class="q-group" data-req="famAneu">
+                    <div class="q-q">Has a parent, brother, sister or child ever had a brain aneurysm or a bleed around the brain (subarachnoid haemorrhage)?</div>
+                    <div class="q-pills">
+                      <label class="q-pill"><input type="radio" name="famAneu" value="yes" data-label="Yes"><span>Yes</span></label>
+                      <label class="q-pill"><input type="radio" name="famAneu" value="no" data-label="No"><span>No</span></label>
+                      <label class="q-pill"><input type="radio" name="famAneu" value="unsure" data-label="Not sure"><span>Not sure</span></label>
+                    </div>
+                  </div>
+                  <div class="q-group" data-when="famAneu:yes" hidden>
+                    <div class="q-q">How many close relatives?</div>
+                    <div class="q-pills">
+                      <label class="q-pill"><input type="radio" name="famCount" value="1"><span>1</span></label>
+                      <label class="q-pill"><input type="radio" name="famCount" value="2"><span>2</span></label>
+                      <label class="q-pill"><input type="radio" name="famCount" value="3+"><span>3 or more</span></label>
+                    </div>
+                  </div>
+                  <div class="q-group">
+                    <div class="q-q">Have you been told you have any of these? <span class="q-why">Tick all that apply</span></div>
+                    <div class="q-chips">
+                      <label class="q-chip"><input type="checkbox" name="brainHx" value="pkd" data-label="Polycystic kidney disease"><span>Polycystic kidney disease</span></label>
+                      <label class="q-chip"><input type="checkbox" name="brainHx" value="ctd" data-label="Connective tissue disorder (Ehlers-Danlos, Marfan)"><span>Connective tissue disorder (e.g. Ehlers-Danlos, Marfan)</span></label>
+                      <label class="q-chip"><input type="checkbox" name="brainHx" value="aorta" data-label="Aortic coarctation or bicuspid aortic valve"><span>Aortic coarctation or bicuspid aortic valve</span></label>
+                      <label class="q-chip"><input type="checkbox" name="brainHx" value="aneu" data-label="Known aneurysm or AVM"><span>A known aneurysm or AVM</span></label>
+                      <label class="q-chip"><input type="checkbox" name="brainHx" value="htn" data-label="High blood pressure"><span>High blood pressure</span></label>
+                      <label class="q-chip"><input type="checkbox" name="brainHx" value="none" data-none><span>None of these</span></label>
+                    </div>
+                  </div>
+                  <div class="q-group" data-req="smoke">
+                    <div class="q-q">Do you smoke?</div>
+                    <div class="q-pills">
+                      <label class="q-pill"><input type="radio" name="smoke" value="never" data-label="Never smoked"><span>Never</span></label>
+                      <label class="q-pill"><input type="radio" name="smoke" value="former" data-label="Former smoker"><span>Used to</span></label>
+                      <label class="q-pill"><input type="radio" name="smoke" value="current" data-label="Current smoker"><span>Yes, currently</span></label>
+                    </div>
+                  </div>
+                  <div class="q-group">
+                    <div class="q-q">Have you had a brain scan before? <span class="q-why">CT or MRI</span></div>
+                    <div class="q-pills">
+                      <label class="q-pill"><input type="radio" name="priorBrain" value="yes"><span>Yes</span></label>
+                      <label class="q-pill"><input type="radio" name="priorBrain" value="no"><span>No</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Women's health -->
+              <div class="q-block" data-when="svc:womens">
+                <div class="q-block-h"><span class="q-tag">Women’s health check</span></div>
+                <div class="q-group">
+                  <div class="q-q">What would you like us to look into? <span class="q-why">Tick all that apply</span></div>
+                  <div class="q-chips">
+                    <label class="q-chip"><input type="checkbox" name="womReason" value="pain" data-label="Pelvic or period pain"><span>Pelvic or period pain</span></label>
+                    <label class="q-chip"><input type="checkbox" name="womReason" value="bleeding" data-label="Heavy or irregular bleeding"><span>Heavy or irregular bleeding</span></label>
+                    <label class="q-chip"><input type="checkbox" name="womReason" value="cond" data-label="Fibroids, endometriosis or ovarian cysts"><span>Fibroids, endometriosis or ovarian cysts</span></label>
+                    <label class="q-chip"><input type="checkbox" name="womReason" value="breast" data-label="Breast check or screening"><span>Breast check or screening</span></label>
+                    <label class="q-chip"><input type="checkbox" name="womReason" value="bone" data-label="Bone health"><span>Bone health</span></label>
+                    <label class="q-chip"><input type="checkbox" name="womReason" value="general" data-label="General check-up"><span>A general check-up</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="famBC">
+                  <div class="q-q">Has a close relative had breast or ovarian cancer?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="famBC" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="famBC" value="no" data-label="No"><span>No</span></label>
+                    <label class="q-pill"><input type="radio" name="famBC" value="unsure" data-label="Not sure"><span>Not sure</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="womSym">
+                  <div class="q-q">Have you noticed a new breast lump, nipple discharge, or bleeding after menopause?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="womSym" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="womSym" value="no" data-label="No"><span>No</span></label>
+                  </div>
+                </div>
+                <div class="q-note" data-when="womSym:yes" hidden>
+                  <strong>Please see your GP soon.</strong>
+                  <span>New symptoms like these should be checked promptly. You can still send this enquiry, and we’ll explain what a referral needs to include.</span>
+                </div>
+              </div>
+
+              <!-- Heart / lung / vascular / abdominal -->
+              <div class="q-block" data-when="svc:heart,lung,vascular,abdominal">
+                <div class="q-block-h"><span class="q-tag">Heart, lung, vascular &amp; abdominal</span></div>
+                <div class="q-group" data-req="smoke2">
+                  <div class="q-q">Do you smoke?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="smoke2" value="never" data-label="Never smoked"><span>Never</span></label>
+                    <label class="q-pill"><input type="radio" name="smoke2" value="former" data-label="Former smoker"><span>Used to</span></label>
+                    <label class="q-pill"><input type="radio" name="smoke2" value="current" data-label="Current smoker"><span>Yes, currently</span></label>
+                  </div>
+                </div>
+                <div class="q-group">
+                  <div class="q-q">Have you been told you have any of these? <span class="q-why">Tick all that apply</span></div>
+                  <div class="q-chips">
+                    <label class="q-chip"><input type="checkbox" name="riskHx" value="bp" data-label="High blood pressure"><span>High blood pressure</span></label>
+                    <label class="q-chip"><input type="checkbox" name="riskHx" value="chol" data-label="High cholesterol"><span>High cholesterol</span></label>
+                    <label class="q-chip"><input type="checkbox" name="riskHx" value="diab" data-label="Diabetes"><span>Diabetes</span></label>
+                    <label class="q-chip"><input type="checkbox" name="riskHx" value="none" data-none><span>None of these</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="famHeart">
+                  <div class="q-q">Did a parent or sibling have a heart attack, stroke or aneurysm before age 60?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="famHeart" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="famHeart" value="no" data-label="No"><span>No</span></label>
+                    <label class="q-pill"><input type="radio" name="famHeart" value="unsure" data-label="Not sure"><span>Not sure</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="q-block q-block-soft" data-when="svc:unsure">
+                <strong>No problem.</strong>
+                <span>Tell us what’s on your mind in the last step, and a team member will talk through the options with you on the phone.</span>
+              </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div data-step hidden>
+              <h2 class="q-h" tabindex="-1">A quick safety check</h2>
+              <p class="q-sub">These help our radiographers keep you safe. Answer as best you can. We’ll confirm everything with you before your scan.</p>
+
+              <div class="q-block" data-when="svc:brain,womens">
+                <div class="q-block-h"><span class="q-tag">MRI safety</span></div>
+                <div class="q-group" data-flag-group="implants">
+                  <div class="q-q">Do you have any of these? <span class="q-why">Tick all that apply</span></div>
+                  <div class="q-chips">
+                    <label class="q-chip"><input type="checkbox" name="implants" value="pacemaker" data-label="Pacemaker or defibrillator (ICD)"><span>Pacemaker or defibrillator (ICD)</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="clip" data-label="Brain aneurysm clip or coil"><span>Brain aneurysm clip or coil</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="cochlear" data-label="Cochlear (ear) implant"><span>Cochlear (ear) implant</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="metal" data-label="Metal fragments in the eye or body"><span>Metal fragments in the eye or body (e.g. from welding)</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="pump" data-label="Nerve stimulator, insulin pump or drug pump"><span>Nerve stimulator, insulin pump or drug pump</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="valve" data-label="Heart valve, stent or other implanted device"><span>Heart valve, stent or other implanted device</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="ortho" data-label="Joint replacement, plates or screws"><span>Joint replacement, metal plates or screws</span></label>
+                    <label class="q-chip" data-when="svc:womens"><input type="checkbox" name="implants" value="iud" data-label="Intrauterine device (IUD)"><span>Intrauterine device (IUD)</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="unsure" data-label="Not sure"><span>I’m not sure</span></label>
+                    <label class="q-chip"><input type="checkbox" name="implants" value="none" data-none><span>None of these</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="clau" data-flag="yes,unsure">
+                  <div class="q-q">Do you find small or enclosed spaces difficult?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="clau" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="clau" value="no" data-label="No"><span>No</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="lie" data-flag="yes">
+                  <div class="q-q">Would you find it hard to lie flat and still for a while?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="lie" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="lie" value="no" data-label="No"><span>No</span></label>
+                  </div>
+                </div>
+                <div class="q-grid">
+                  <div class="q-field"><label for="q-wt">Approximate weight in kg <em>(optional)</em></label><input id="q-wt" name="wt" type="text" inputmode="numeric" maxlength="3"></div>
+                </div>
+              </div>
+
+              <div class="q-block">
+                <div class="q-block-h"><span class="q-tag">For every scan</span></div>
+                <div class="q-group" data-req="preg" data-when="sex:female">
+                  <div class="q-q">Are you pregnant, or is there a chance you could be?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="preg" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="preg" value="no" data-label="No"><span>No</span></label>
+                    <label class="q-pill"><input type="radio" name="preg" value="unsure" data-label="Not sure"><span>Not sure</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="kidney" data-flag="yes,unsure">
+                  <div class="q-q">Do you have kidney disease?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="kidney" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="kidney" value="no" data-label="No"><span>No</span></label>
+                    <label class="q-pill"><input type="radio" name="kidney" value="unsure" data-label="Not sure"><span>Not sure</span></label>
+                  </div>
+                </div>
+                <div class="q-group" data-req="allergy" data-flag="yes,unsure">
+                  <div class="q-q">Have you ever had an allergic reaction to contrast dye (the injection used in some scans)?</div>
+                  <div class="q-pills">
+                    <label class="q-pill"><input type="radio" name="allergy" value="yes" data-label="Yes"><span>Yes</span></label>
+                    <label class="q-pill"><input type="radio" name="allergy" value="no" data-label="No"><span>No</span></label>
+                    <label class="q-pill"><input type="radio" name="allergy" value="unsure" data-label="Not sure"><span>Not sure</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div data-step hidden>
+              <h2 class="q-h" tabindex="-1">Referral &amp; anything else</h2>
+              <p class="q-sub">This helps us advise you on the phone. We don’t ask for any payment details here.</p>
+
+              <div class="q-group" data-req="ref">
+                <div class="q-q">Do you have a referral from a doctor for this scan?</div>
+                <div class="q-pills">
+                  <label class="q-pill"><input type="radio" name="ref" value="yes" data-label="Yes, I have a referral"><span>Yes</span></label>
+                  <label class="q-pill"><input type="radio" name="ref" value="no" data-label="No referral yet"><span>Not yet</span></label>
+                  <label class="q-pill"><input type="radio" name="ref" value="unsure" data-label="Not sure if I need one"><span>Not sure if I need one</span></label>
+                </div>
+              </div>
+              <div class="q-note q-note-info" data-when="ref:no,unsure" hidden>
+                <strong>That’s okay.</strong>
+                <span>We’ll explain on the call whether a referral is needed for your scan and how to get one.</span>
+              </div>
+              <div class="q-grid" data-when="ref:yes" hidden>
+                <div class="q-field q-span"><label for="q-refdr">Referring doctor or practice <em>(optional)</em></label><input id="q-refdr" name="refdr" type="text"></div>
+              </div>
+
+              <div class="q-field">
+                <label for="q-notes">Anything else you’d like us to know? <em>(optional)</em></label>
+                <textarea id="q-notes" name="notes" rows="3" placeholder="For example, what prompted you to enquire, or questions you’d like answered."></textarea>
+              </div>
+
+              <div class="q-cost">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>
+                <span><strong>About cost.</strong> Screening scans aren’t covered by Medicare, so the full fee is paid by you. We’ll phone you with the exact cost <em>before</em> anything is booked.</span>
+              </div>
+
+              <label class="q-consent" data-req="consent"><input type="checkbox" name="consent" value="yes"><span class="ind"></span><span>I’m happy for inOne Imaging to contact me about this enquiry, and to use my answers as described in the <a href="#">Privacy policy</a>.</span></label>
+            </div>
+
+            <p class="q-error" role="alert" data-error hidden>Please check the highlighted questions.</p>
+
+            <div class="q-nav">
+              <button type="button" class="btn btn-ghost" data-back hidden>Back</button>
+              <span class="q-nav-note" data-stepnote></span>
+              <button type="button" class="btn btn-primary btn-lg" data-next>Continue</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Confirmation -->
+        <div class="q-card q-done" data-done hidden>
+          <div class="q-tick" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+          <h2 class="q-h" tabindex="-1" data-done-h>Thanks. We’ve got your enquiry.</h2>
+          <p class="q-sub" data-done-p></p>
+          <div data-summary></div>
+          <div class="q-flags" data-flags hidden>
+            <strong>We’ll go through these with you</strong>
+            <ul data-flag-list></ul>
+          </div>
+          <div class="q-done-actions">
+            <a class="btn btn-primary" href="Patient-Portal.dc.html">Back to patient home</a>
+            <button type="button" class="btn btn-ghost" data-restart>Start another enquiry</button>
+          </div>
+          <p class="q-proto">Prototype only: nothing is sent from this page.</p>
+        </div>
+      </div>
+
+      <aside class="q-aside" aria-label="What to expect">
+        <div class="q-side-card">
+          <h3>What happens next</h3>
+          <ol class="q-steps">
+            <li><b>1</b><span><strong>You send this enquiry</strong>It takes about three minutes.</span></li>
+            <li><b>2</b><span><strong>We phone you</strong>A team member goes through your answers and tells you the fee.</span></li>
+            <li><b>3</b><span><strong>You decide</strong>We book a time, or help you get the right referral first.</span></li>
+          </ol>
+        </div>
+        <div class="q-side-card q-side-call">
+          <span class="q-side-k">Prefer to talk now?</span>
+          <a href="Clinics.dc.html" class="q-side-tel">1300 765 456</a>
+          <span class="q-side-s">Our team can take your details by phone.</span>
+        </div>
+        <div class="q-side-urgent">
+          <strong>Not for emergencies.</strong> If you have a sudden severe headache or other urgent symptoms, call <b>000</b>.
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

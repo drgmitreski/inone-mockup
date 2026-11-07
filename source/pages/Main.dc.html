@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{opacity:.85}
+</style>
+</helmet>
+<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FB; width: 100%; min-height: 100vh; display: flex; flex-direction: column">
+  <dc-import name="Header" mode="none" active="none" hint-size="100%,128px"></dc-import>
+
+  <main class="mesh" style="flex: 1 0 auto; display: flex; flex-direction: column">
+    <div style="position: relative; z-index: 1; flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; padding: clamp(16px, 4vh, 56px) 0 clamp(16px, 3.5vh, 48px)">
+      <!-- Hero -->
+      <section style="width: 100%; max-width: 1200px; box-sizing: border-box; margin: 0 auto; padding: 0 40px clamp(18px, 3.4vh, 40px); text-align: center; display: flex; flex-direction: column; align-items: center; gap: clamp(10px, 1.7vh, 18px)">
+        <span class="eyebrow"><i></i>Radiologist-led imaging in Melbourne’s north and west</span>
+        <h1 style="margin: 0; font-weight: 400; font-size: clamp(32px, min(4.4vw, 6.6vh), 66px); color: #14183A">Specialist radiologists. <br class="br-tall"><span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">Close to home.</span></h1>
+        <p style="margin: 0; max-width: 760px; font-size: clamp(16px, 2vh, 20px); line-height: 1.55; color: #3B3F63">A small team of specialist radiologists who take the time to explain your results.</p>
+        <a class="chip" href="Radiologists.dc.html" style="text-decoration: none; display: inline-flex; align-items: center; gap: 14px; margin-top: 4px; padding: 6px 20px 6px 8px; border-radius: 999px; background: rgba(255,255,255,0.85); border: 1px solid rgba(90,69,147,0.14); box-shadow: 0 1px 2px rgba(30,26,69,.06)">
+        <span style="display: flex"><span style="display: flex"><span data-headshot="goran" aria-hidden="true" style="width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; border: 3px solid #FFFFFF">GM</span></span><span style="margin-left: -14px; display: flex"><span data-headshot="julian" aria-hidden="true" style="width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; border: 3px solid #FFFFFF">JM</span></span><span style="margin-left: -14px; display: flex"><span data-headshot="terry" aria-hidden="true" style="width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; border: 3px solid #FFFFFF">TK</span></span><span style="margin-left: -14px; display: flex"><span data-headshot="daniel" aria-hidden="true" style="width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; border: 3px solid #FFFFFF">DL</span></span><span style="margin-left: -14px; display: flex"><span data-headshot="kevin" aria-hidden="true" style="width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; border: 3px solid #FFFFFF">KC</span></span></span>
+        <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #43337A">Meet our radiologists <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+      </a>
+      </section>
+
+      <!-- Doors: mirrored -->
+      <section aria-label="Choose your path" style="width: 100%; max-width: 1120px; box-sizing: border-box; margin: 0 auto; padding: 0 40px; display: flex; flex-wrap: wrap; gap: 20px">
+        <div class="door door-patient" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box">
+          <div style="padding: clamp(18px, 2.8vh, 32px) clamp(22px, 2.2vw, 32px); display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; justify-content: space-between; flex: 1">
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 14px; font-weight: 500; color: rgba(255,255,255,.72)">For patients</span>
+              <span style="font-weight: 500; font-size: clamp(22px, 2.9vh, 30px); letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap">Book, prepare, view.</span>
+            </div>
+            <a class="btn btn-light btn-lg" href="Portals.dc.html#patient" style="min-height: clamp(44px, 5.2vh, 52px)">Book a scan<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+          </div>
+          <nav class="door-links" aria-label="For patients shortcuts"><a href="Patient-Portal.dc.html"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1M9 12l2 2 4-4"></path></svg>How to prepare</a><a href="Portals.dc.html#patient"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"></rect><circle cx="12" cy="10.5" r="3"></circle><path d="M8 21h8M12 17v4"></path></svg>View my images</a><a href="Patient-Portal.dc.html"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M3 10h18M7 15h4"></path></svg>Costs &amp; billing</a></nav>
+        </div>
+        <div class="door door-clin" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box">
+          <div style="padding: clamp(18px, 2.8vh, 32px) clamp(22px, 2.2vw, 32px); display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; justify-content: space-between; flex: 1">
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <span style="font-size: 14px; font-weight: 500; color: rgba(255,255,255,.72)">For referring doctors</span>
+              <span style="font-weight: 500; font-size: clamp(22px, 2.9vh, 30px); letter-spacing: -0.025em; line-height: 1.1; white-space: nowrap">Refer, review, learn.</span>
+            </div>
+            <a class="btn btn-light btn-lg" href="Portals.dc.html#referral" style="min-height: clamp(44px, 5.2vh, 52px)">Send a referral<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+          </div>
+          <nav class="door-links" aria-label="For referring doctors shortcuts"><a href="Portals.dc.html#clinical"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M7 13l3-3 2 2 4-4M8 21h8M12 17v4"></path></svg>View results</a><a href="Clinician-Portal.dc.html"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19V5M8 7h6M8 11h6"></path></svg>Guidelines</a><a href="Education.dc.html"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c2 2 10 2 12 0v-5M22 9v6"></path></svg>Education &amp; CPD</a></nav>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="clinics" style="background: #1E1A45; color: #C9C8DC; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 12px 40px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between">
+      <div style="display: flex; flex-wrap: wrap; gap: 4px 22px">
+        <span><strong style="color: #FFFFFF; font-weight: 500">Roxburgh Park</strong> · 250 Somerton Rd</span>
+        <span><strong style="color: #FFFFFF; font-weight: 500">Deer Park</strong> · 28–72 Neale Rd</span>
+        <span><strong style="color: #FFFFFF; font-weight: 500">Bacchus Marsh</strong> · 160–194 Main St</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <img src="/_blob/47ce6e5a4a0db0fcf7463dd3811c37fa" alt="Medicare Bulk Billing" style="height: 36px; width: auto; display: block; background: #FFFFFF; border-radius: 6px">
+        <span style="line-height: 1.3"><strong style="display: block; color: #FFFFFF; font-weight: 500">Bulk billing available</strong>For eligible Medicare card holders</span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

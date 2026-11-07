@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Diagnosis</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F8F7FB}
+a{color:inherit}a:hover{opacity:.85}
+</style>
+</helmet>
+<div style="font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1A1F4A; background: #F8F7FB; width: 100%">
+  <dc-import name="Header" mode="patient" active="imaging" hint-size="100%,128px"></dc-import>
+
+  <section class="hero-band" style="background: #3B2E6E; color: #FFFFFF">
+    <div style="display: flex; flex-wrap: wrap; align-items: stretch">
+      <div style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 88px 56px 88px max(40px, calc((100% - 1320px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center">
+        <span style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.24em; color: #D3C9EE">DIAGNOSIS</span>
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.03em">Accurate answers. Better decisions.</h1>
+        <span aria-hidden="true" style="width: 56px; height: 2px; background: #D3C9EE"></span>
+        <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #E3DCF3">Every scan reported by a specialist radiologist, close to home. Walk-ins welcome for X-ray and all referrals accepted.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="Portals.dc.html#patient" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #3B2E6E; border-radius: 8px; font-weight: 700">Book a scan</a>
+          <a href="#hours" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; border: 1.5px solid #FFFFFF; border-radius: 8px; font-weight: 600">Opening hours</a>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true" style="flex: 1 1 420px; min-width: 0; box-sizing: border-box; background: #2C2254; padding: 64px 56px; display: flex; flex-direction: column; justify-content: center; gap: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(40px, 4.4vw, 64px); line-height: 1.1; letter-spacing: -0.03em; color: #8E7DC6">
+        <span style="color: #FFFFFF">CT</span><span>MRI</span><span>Ultrasound</span><span>X-ray</span><span>DEXA</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #EEEAF7">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 44px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px 40px">
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4A3A84" stroke-width="1.5" style="flex: none"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4.5 4.5-7 8-7s7 2.5 8 7"></path></svg><span><strong style="display: block; color: #4A3A84; margin-bottom: 4px">Subspecialty reporting</strong><span style="color: #4A4D6A">The right radiologist for your scan.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4A3A84" stroke-width="1.5" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span><strong style="display: block; color: #4A3A84; margin-bottom: 4px">Fast results</strong><span style="color: #4A4D6A">Reports to your doctor, urgent findings phoned.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4A3A84" stroke-width="1.5" style="flex: none"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span><strong style="display: block; color: #4A3A84; margin-bottom: 4px">Close to home</strong><span style="color: #4A4D6A">Roxburgh Park, Deer Park and Bacchus Marsh.</span></span></div>
+      <div style="display: flex; gap: 14px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4A3A84" stroke-width="1.5" style="flex: none"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 10h18"></path></svg><span><strong style="display: block; color: #4A3A84; margin-bottom: 4px">Bulk billing available</strong><span style="color: #4A4D6A">For eligible Medicare card holders.</span></span></div>
+    </div>
+  </section>
+
+  <section id="services" style="max-width: 1320px; margin: 0 auto; padding: 80px 40px 64px">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid #3B2E6E">
+      <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px; letter-spacing: -0.02em; color: #3B2E6E">Our imaging services</h2>
+      <a href="#services" style="color: #4A3A84; font-weight: 600">Preparation guides →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); column-gap: 48px">
+      <a href="#services" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E0DCEB"><img src="/_blob/8ef3b369c862572a96ad80fd1c1148d3" alt="CT image of the abdomen" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #4A3A84; font-size: 18px">CT</strong><span style="color: #4A4D6A; line-height: 1.5">Fast, detailed cross-sectional imaging, with and without contrast.</span><span style="color: #4A3A84; font-weight: 600; margin-top: auto">How to prepare →</span></span></a>
+      <a href="#services" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E0DCEB"><img src="/_blob/e267aef412d967484e86514f4f67a2c6" alt="MRI of the brain" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #4A3A84; font-size: 18px">MRI</strong><span style="color: #4A4D6A; line-height: 1.5">Siemens 1.5T MRI for brain, spine, joints and body.</span><span style="color: #4A3A84; font-weight: 600; margin-top: auto">How to prepare →</span></span></a>
+      <a href="#services" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E0DCEB"><img src="/_blob/89db4104753359964200692de6d5b6a4" alt="Ultrasound image" style="width: 96px; height: 124px; object-fit: cover; border-radius: 6px; flex: none"><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #4A3A84; font-size: 18px">Ultrasound</strong><span style="color: #4A4D6A; line-height: 1.5">General, vascular, musculoskeletal and women’s health.</span><span style="color: #4A3A84; font-weight: 600; margin-top: auto">How to prepare →</span></span></a>
+      <a href="#services" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E0DCEB"><span aria-hidden="true" style="width: 96px; height: 124px; border-radius: 6px; flex: none; background: #2C2254; color: #D3C9EE; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">X-ray</span><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #4A3A84; font-size: 18px">X-ray</strong><span style="color: #4A4D6A; line-height: 1.5">Walk-in at all clinics. No appointment needed.</span><span style="color: #4A3A84; font-weight: 600; margin-top: auto">Learn more →</span></span></a>
+      <a href="#services" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E0DCEB"><span aria-hidden="true" style="width: 96px; height: 124px; border-radius: 6px; flex: none; background: #2C2254; color: #D3C9EE; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">DEXA</span><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #4A3A84; font-size: 18px">DEXA bone density</strong><span style="color: #4A4D6A; line-height: 1.5">Assess bone strength and osteoporosis risk.</span><span style="color: #4A3A84; font-weight: 600; margin-top: auto">How to prepare →</span></span></a>
+      <a href="#services" style="text-decoration: none; display: flex; gap: 18px; padding: 24px 0; border-bottom: 1px solid #E0DCEB"><span aria-hidden="true" style="width: 96px; height: 124px; border-radius: 6px; flex: none; background: #2C2254; color: #D3C9EE; display: flex; align-items: center; justify-content: center"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20l7-7M10 8l6 6M14 4l6 6-8 8-6-6z"></path></svg></span><span style="display: flex; flex-direction: column; gap: 6px"><strong style="color: #4A3A84; font-size: 18px">Image-guided injections</strong><span style="color: #4A4D6A; line-height: 1.5">CT and ultrasound-guided pain injections.</span><span style="color: #4A3A84; font-weight: 600; margin-top: auto">How to prepare →</span></span></a>
+    </div>
+  </section>
+
+  <!-- Hours by modality -->
+  <section id="hours" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 80px">
+    <h2 style="margin: 0 0 18px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px; color: #3B2E6E">Opening hours by clinic</h2>
+    <div style="overflow-x: auto; background: #FFFFFF; border: 1px solid #E0DCEB; border-radius: 14px">
+      <table style="width: 100%; min-width: 760px; border-collapse: collapse; font-size: 15px">
+        <thead><tr style="text-align: left; color: #5E6080; font-size: 13px; letter-spacing: 0.08em">
+          <th scope="col" style="padding: 16px 22px; border-bottom: 1px solid #E0DCEB">CLINIC</th>
+          <th scope="col" style="padding: 16px 22px; border-bottom: 1px solid #E0DCEB">X-RAY (WALK-IN)</th>
+          <th scope="col" style="padding: 16px 22px; border-bottom: 1px solid #E0DCEB">CT</th>
+          <th scope="col" style="padding: 16px 22px; border-bottom: 1px solid #E0DCEB">ULTRASOUND</th>
+          <th scope="col" style="padding: 16px 22px; border-bottom: 1px solid #E0DCEB">MRI</th>
+        </tr></thead>
+        <tbody>
+          <tr><th scope="row" style="text-align: left; padding: 16px 22px; border-bottom: 1px solid #EEECF4">Roxburgh Park</th><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Sat 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Sat 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Sat 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">[CONFIRM]</td></tr>
+          <tr><th scope="row" style="text-align: left; padding: 16px 22px; border-bottom: 1px solid #EEECF4">Deer Park <span style="font-weight: 400; color: #5E6080">(from 9 Nov)</span></th><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Fri 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Fri 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Fri 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">—</td></tr>
+          <tr><th scope="row" style="text-align: left; padding: 16px 22px; border-bottom: 1px solid #EEECF4">Bacchus Marsh <span style="font-weight: 400; color: #5E6080">(coming soon)</span></th><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Fri 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Fri 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">Mon–Fri 9am–5pm</td><td style="padding: 16px 22px; border-bottom: 1px solid #EEECF4">[CONFIRM]</td></tr>
+          <tr><th scope="row" style="text-align: left; padding: 16px 22px">Taylors Lakes <span style="font-weight: 400; color: #5E6080">(coming soon)</span></th><td style="padding: 16px 22px">Coming soon</td><td style="padding: 16px 22px">Coming soon</td><td style="padding: 16px 22px">Coming soon</td><td style="padding: 16px 22px">Coming soon</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section style="background: #3B2E6E; color: #FFFFFF">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 48px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
+      <div><h2 style="margin: 0 0 6px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Have a referral?</h2><span style="color: #E3DCF3">Book online in minutes, or upload your referral and we’ll call you.</span></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a href="Portals.dc.html#patient" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #3B2E6E; border-radius: 8px; font-weight: 700">Book online</a>
+        <a href="Portals.dc.html#patient" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; border: 1.5px solid #FFFFFF; border-radius: 8px; font-weight: 600">Upload a referral</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px 32px; color: #4A4D6A">
+    <span>Radiologist-led practice</span>
+    <span>All referrals accepted</span>
+    <span>Walk-in X-ray</span>
+    <span>Reports to your doctor, fast</span>
+  </section>
+
+  <section aria-label="Bulk billing" style="background: #F0FAF3; border-top: 1px solid #D5EEDD; border-bottom: 1px solid #D5EEDD">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 28px 40px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: center">
+      <img src="/_blob/47ce6e5a4a0db0fcf7463dd3811c37fa" alt="Medicare Bulk Billing" style="width: 128px; height: auto; display: block; background: #FFFFFF; border-radius: 6px">
+      <span><strong style="display: block; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; color: #2F5A40">Bulk billing available</strong><span style="color: #3E6A4F; font-size: 17px">For eligible Medicare card holders</span></span>
+    </div>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
