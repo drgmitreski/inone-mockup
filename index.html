@@ -380,6 +380,26 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   .home-wrap .chip>span:last-child{display:none!important}
 }
 
+/* ---------- Mobile: clinician quick access ---------- */
+@media (max-width:640px){
+  /* portal buttons stay in the clinician header on every page */
+  .hdr-cta-clin{display:flex!important;flex-wrap:nowrap!important;width:100%;gap:8px!important}
+  .hdr-cta-clin .btn{flex:1;min-height:44px;padding:0 8px;font-size:14px}
+  .page[data-page="referrers"] .hdr-cta-clin{display:none!important}
+  /* clinician home: headline + the two portals, nothing else above the fold */
+  .clin-hero{gap:18px!important;padding-top:28px!important;padding-bottom:28px!important}
+  .clin-hero>div:first-child{gap:0!important;flex:none!important;width:100%}
+  .clin-hero h1{font-size:clamp(28px,8vw,34px)!important}
+  #login{flex:none!important;width:100%;gap:10px!important}
+  #login a{padding:18px 20px!important;border-radius:16px!important}
+  #login a span span:first-child{font-size:19px!important}
+  #login a span span:last-child:not([aria-hidden]){font-size:14px}
+  section[aria-label="Quick actions"]>div{display:grid!important;grid-template-columns:1fr 1fr;column-gap:16px}
+  section[aria-label="Quick actions"] a{padding:16px 0!important}
+  section[aria-label="Quick actions"] a>span{display:none}
+  section[aria-label="Quick actions"] a>strong{font-size:15px!important}
+}
+
 </style>
 </head>
 <body>
@@ -831,8 +851,8 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-          <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
+        <div class="hdr-cta hdr-cta-clin" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
       
@@ -873,11 +893,11 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
   <!-- Hero + login -->
   <section style="background: #141838; color: #EEEDF6">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 64px 40px 72px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
+    <div class="clin-hero" style="max-width: 1320px; margin: 0 auto; padding: 64px 40px 72px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
       <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-        <p style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #C3B6EA">FOR GPs, SPECIALISTS &amp; ALLIED HEALTH</p>
+        <p class="hide-xs" style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #C3B6EA">FOR GPs, SPECIALISTS &amp; ALLIED HEALTH</p>
         <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 50px; line-height: 1.06; letter-spacing: -0.03em">Refer, review and learn — all in one.</h1>
-        <ul style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 17px; color: #D9D8E8">
+        <ul class="hide-xs" style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 17px; color: #D9D8E8">
           <li style="display: flex; gap: 12px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C3B6EA" stroke-width="2.2" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg>Patient images, reports and priors in one place</li>
           <li style="display: flex; gap: 12px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C3B6EA" stroke-width="2.2" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg>Send eReferrals and see your patients’ upcoming appointments</li>
           <li style="display: flex; gap: 12px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C3B6EA" stroke-width="2.2" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg>Urgent findings phoned direct to your practice</li>
@@ -2102,8 +2122,8 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-          <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
+        <div class="hdr-cta hdr-cta-clin" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
       
@@ -2435,8 +2455,8 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-          <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
+        <div class="hdr-cta hdr-cta-clin" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
       
@@ -3385,8 +3405,8 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
       
       
-        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-          <a class="btn hide-sm" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
+        <div class="hdr-cta hdr-cta-clin" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+          <a class="btn" href="#portals-clinician--referral" style="border-color: #3A3E66; color: #FFFFFF">Referral portal</a>
           <a class="btn btn-light" href="#portals-clinician--clinical">Clinical portal</a>
         </div>
       

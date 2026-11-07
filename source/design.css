@@ -368,3 +368,23 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   .home-wrap footer>div>div:last-child{display:none!important}
   .home-wrap .chip>span:last-child{display:none!important}
 }
+
+/* ---------- Mobile: clinician quick access ---------- */
+@media (max-width:640px){
+  /* portal buttons stay in the clinician header on every page */
+  .hdr-cta-clin{display:flex!important;flex-wrap:nowrap!important;width:100%;gap:8px!important}
+  .hdr-cta-clin .btn{flex:1;min-height:44px;padding:0 8px;font-size:14px}
+  .page[data-page="referrers"] .hdr-cta-clin{display:none!important}
+  /* clinician home: headline + the two portals, nothing else above the fold */
+  .clin-hero{gap:18px!important;padding-top:28px!important;padding-bottom:28px!important}
+  .clin-hero>div:first-child{gap:0!important;flex:none!important;width:100%}
+  .clin-hero h1{font-size:clamp(28px,8vw,34px)!important}
+  #login{flex:none!important;width:100%;gap:10px!important}
+  #login a{padding:18px 20px!important;border-radius:16px!important}
+  #login a span span:first-child{font-size:19px!important}
+  #login a span span:last-child:not([aria-hidden]){font-size:14px}
+  section[aria-label="Quick actions"]>div{display:grid!important;grid-template-columns:1fr 1fr;column-gap:16px}
+  section[aria-label="Quick actions"] a{padding:16px 0!important}
+  section[aria-label="Quick actions"] a>span{display:none}
+  section[aria-label="Quick actions"] a>strong{font-size:15px!important}
+}
