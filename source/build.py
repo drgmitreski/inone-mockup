@@ -31,6 +31,7 @@ blobs = {
  '2a0f90512375763fea0f6c8378a0d6e1': C+'edu_live_real.jpg',
  'a1b2c3d4e5f60718293a4b5c6d7e8f90': C+'mohammed_ceo.jpg',
  'b2c3d4e5f6071829a3b4c5d6e7f8091a': C+'joey_radiographer.jpg',
+ 'c3d4e5f60718293a4b5c6d7e8f9a0b1c': C+'roxburgh_sign.jpg',
 }
 def datauri(path):
     im = Image.open(path).convert('RGB')
@@ -187,7 +188,6 @@ html = '''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<script>(function(){var m=/[?&]nav=([abc])/.exec(location.search);if(m)document.documentElement.setAttribute('data-nav',m[1])})()</script>
 <title>inOne Imaging — Website prototype</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
