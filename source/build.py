@@ -39,7 +39,7 @@ def datauri(path):
 uris = {k: datauri(v) for k, v in blobs.items()}
 
 pages = [('Main', 'home'), ('Home-Warm', 'home-warm'), ('Patient-Portal', 'patients'), ('Clinician-Portal', 'referrers'), ('Portals', 'portals'),
-         ('Diagnosis', 'diagnosis'), ('Intervention', 'intervention'), ('Screening', 'screening'), ('Screening-Enquiry', 'screening-enquiry'), ('Education', 'education'), ('Radiologists', 'radiologists'), ('Research', 'research'), ('Clinics', 'clinics'), ('About', 'about')]
+         ('Diagnosis', 'diagnosis'), ('Intervention', 'intervention'), ('Screening', 'screening'), ('Screening-Enquiry', 'screening-enquiry'), ('Costs', 'costs'), ('Work-With-Us', 'work-with-us'), ('Education', 'education'), ('Radiologists', 'radiologists'), ('Research', 'research'), ('Clinics', 'clinics'), ('About', 'about')]
 pid = dict(pages)
 VARIANTS = [('Portals', 'portals-patient', 'patient'), ('Portals', 'portals-clinician', 'clinician')]
 
@@ -52,8 +52,8 @@ def body(fname):
 # Header
 hdr = body('Header')
 SETS = {
- 'none': [('radiologists','Our radiologists','Radiologists.dc.html'),('clinics','Our clinics','Clinics.dc.html'),('about','About us','About.dc.html')],
- 'patient': [('home','Patient home','Patient-Portal.dc.html'),('imaging','Imaging &amp; scans','Diagnosis.dc.html'),('procedures','Procedures','Intervention.dc.html'),('screening','Screening','Screening.dc.html'),('costs','Costs &amp; billing','Patient-Portal.dc.html'),('radiologists','Our radiologists','Radiologists.dc.html')],
+ 'none': [('radiologists','Our radiologists','Radiologists.dc.html'),('clinics','Our clinics','Clinics.dc.html'),('about','About us','About.dc.html'),('work','Work with us','Work-With-Us.dc.html')],
+ 'patient': [('home','Patient home','Patient-Portal.dc.html'),('imaging','Imaging &amp; scans','Diagnosis.dc.html'),('procedures','Procedures','Intervention.dc.html'),('screening','Screening','Screening.dc.html'),('costs','Costs &amp; billing','Costs.dc.html'),('radiologists','Our radiologists','Radiologists.dc.html')],
  'clinician': [('home','Clinician home','Clinician-Portal.dc.html'),('refer','Refer a patient','Portals.dc.html#referral'),('pathways','Procedures &amp; pathways','Clinician-Portal.dc.html#tab-intervention'),('programs','Screening programs','Clinician-Portal.dc.html#tab-screening'),('education','Education &amp; CPD','Education.dc.html'),('support','Referrer support','Clinician-Portal.dc.html')],
 }
 def header(mode, active):
@@ -252,6 +252,9 @@ html = '''<!doctype html>
 </script>
 <script>
 ''' + open(os.path.join(HERE, 'questionnaire.js')).read() + '''
+</script>
+<script>
+''' + open(os.path.join(HERE, 'workwithus.js')).read() + '''
 </script>
 </body>
 </html>

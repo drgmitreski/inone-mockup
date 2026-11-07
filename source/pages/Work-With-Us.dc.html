@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Work with us</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F6FB}
+a{color:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FB; width: 100%">
+  <dc-import name="Header" mode="none" active="work" hint-size="100%,128px"></dc-import>
+
+  <section class="mesh">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 40px 40px 24px">
+      <span class="eyebrow"><i></i>Work with us</span>
+      <h1 style="margin: 16px 0 12px; max-width: 900px; font-size: clamp(30px, 3.8vw, 50px); color: #14183A">Help us build something <span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">different.</span></h1>
+      <p class="hide-xs" style="margin: 0; max-width: 720px; font-size: 17px; line-height: 1.55; color: #3B3F63">inOne is a radiologist-led practice in Melbourne’s north and west, built around specialist reporting and patients who are looked after properly. Tell us about you and where you’d like to fit. There’s no vacancy list to wait for.</p>
+    </div>
+
+    <div data-wwu class="q-layout">
+      <div class="q-main">
+        <div class="q-card" data-form-card>
+          <form novalidate aria-label="Expression of interest">
+            <h2 class="q-h" tabindex="-1">What kind of role interests you?</h2>
+            <p class="q-sub">Radiologists through to administration. Pick the one that fits best.</p>
+            <div class="q-opts" data-req="role"><label class="q-opt"><input type="radio" name="role" value="radiologist" data-label="Radiologist"><span class="ind r"></span><span><span class="t">Radiologist</span><span class="d">Consultant or subspecialty radiologist</span></span></label><label class="q-opt"><input type="radio" name="role" value="registrar" data-label="Registrar or fellow"><span class="ind r"></span><span><span class="t">Registrar or fellow</span><span class="d">Radiology training or fellowship</span></span></label><label class="q-opt"><input type="radio" name="role" value="radiographer" data-label="Radiographer"><span class="ind r"></span><span><span class="t">Radiographer</span><span class="d">CT, MRI, X-ray or interventional</span></span></label><label class="q-opt"><input type="radio" name="role" value="sonographer" data-label="Sonographer"><span class="ind r"></span><span><span class="t">Sonographer</span><span class="d">General, MSK, women’s or vascular</span></span></label><label class="q-opt"><input type="radio" name="role" value="nurse" data-label="Nurse"><span class="ind r"></span><span><span class="t">Nurse</span><span class="d">Procedures and patient care</span></span></label><label class="q-opt"><input type="radio" name="role" value="admin" data-label="Reception & administration"><span class="ind r"></span><span><span class="t">Reception & administration</span><span class="d">Front desk, bookings, billing</span></span></label><label class="q-opt"><input type="radio" name="role" value="manager" data-label="Practice or clinic management"><span class="ind r"></span><span><span class="t">Practice or clinic management</span><span class="d">Leading a site or team</span></span></label><label class="q-opt"><input type="radio" name="role" value="other" data-label="Something else"><span class="ind r"></span><span><span class="t">Something else</span><span class="d">Tell us how you’d like to contribute</span></span></label></div>
+
+            <div data-when="role:radiologist,registrar" hidden style="margin-top: 26px">
+              <div class="q-block">
+                <div class="q-block-h"><span class="q-tag">Radiology</span></div>
+                <div class="q-group"><div class="q-q">Subspecialty interests <span class="q-why">Tick all that apply</span></div><div class="q-chips"><label class="q-chip"><input type="checkbox" name="sub" value="Interventional radiology" data-label="Interventional radiology"><span>Interventional radiology</span></label><label class="q-chip"><input type="checkbox" name="sub" value="Neuroradiology" data-label="Neuroradiology"><span>Neuroradiology</span></label><label class="q-chip"><input type="checkbox" name="sub" value="Musculoskeletal" data-label="Musculoskeletal"><span>Musculoskeletal</span></label><label class="q-chip"><input type="checkbox" name="sub" value="Body imaging" data-label="Body imaging"><span>Body imaging</span></label><label class="q-chip"><input type="checkbox" name="sub" value="Breast & women’s imaging" data-label="Breast & women’s imaging"><span>Breast & women’s imaging</span></label><label class="q-chip"><input type="checkbox" name="sub" value="Cardiac CT" data-label="Cardiac CT"><span>Cardiac CT</span></label><label class="q-chip"><input type="checkbox" name="sub" value="General diagnostic" data-label="General diagnostic"><span>General diagnostic</span></label></div></div><div class="q-group" data-req="reg"><div class="q-q">Registration</div><div class="q-pills"><label class="q-pill"><input type="radio" name="reg" value="AHPRA registered" data-label="AHPRA registered"><span>AHPRA registered</span></label><label class="q-pill"><input type="radio" name="reg" value="Registration pending" data-label="Registration pending"><span>Registration pending</span></label><label class="q-pill"><input type="radio" name="reg" value="Overseas-trained" data-label="Overseas-trained"><span>Overseas-trained</span></label></div></div>
+                <div class="q-grid"><div class="q-field q-span"><label for="w-fell">Fellowship or training <em>(optional)</em></label><input id="w-fell" name="fell" type="text" placeholder="For example, FRANZCR, year of training"></div></div>
+              </div>
+            </div>
+
+            <div data-when="role:radiographer,sonographer,nurse" hidden style="margin-top: 26px">
+              <div class="q-block">
+                <div class="q-block-h"><span class="q-tag">Clinical team</span></div>
+                <div class="q-group" data-req="reg2"><div class="q-q">Registration or accreditation</div><div class="q-pills"><label class="q-pill"><input type="radio" name="reg2" value="Registered" data-label="Registered"><span>Registered</span></label><label class="q-pill"><input type="radio" name="reg2" value="Pending" data-label="Pending"><span>Pending</span></label><label class="q-pill"><input type="radio" name="reg2" value="Student or new graduate" data-label="Student or new graduate"><span>Student or new graduate</span></label></div></div><div class="q-group"><div class="q-q">Modalities <span class="q-why">Tick all that apply</span></div><div class="q-chips"><label class="q-chip"><input type="checkbox" name="mods" value="CT" data-label="CT"><span>CT</span></label><label class="q-chip"><input type="checkbox" name="mods" value="MRI" data-label="MRI"><span>MRI</span></label><label class="q-chip"><input type="checkbox" name="mods" value="X-ray" data-label="X-ray"><span>X-ray</span></label><label class="q-chip"><input type="checkbox" name="mods" value="Ultrasound" data-label="Ultrasound"><span>Ultrasound</span></label><label class="q-chip"><input type="checkbox" name="mods" value="DEXA" data-label="DEXA"><span>DEXA</span></label><label class="q-chip"><input type="checkbox" name="mods" value="Interventional suite" data-label="Interventional suite"><span>Interventional suite</span></label></div></div>
+              </div>
+            </div>
+
+            <div data-when="role:admin,manager,other" hidden style="margin-top: 26px">
+              <div class="q-block">
+                <div class="q-block-h"><span class="q-tag">Operations</span></div>
+                <div class="q-group" data-req="exp"><div class="q-q">Experience</div><div class="q-pills"><label class="q-pill"><input type="radio" name="exp" value="Just starting out" data-label="Just starting out"><span>Just starting out</span></label><label class="q-pill"><input type="radio" name="exp" value="1 to 3 years" data-label="1 to 3 years"><span>1 to 3 years</span></label><label class="q-pill"><input type="radio" name="exp" value="3+ years" data-label="3+ years"><span>3+ years</span></label></div></div><div class="q-group"><div class="q-q">Areas you’re strong in <span class="q-why">Tick all that apply</span></div><div class="q-chips"><label class="q-chip"><input type="checkbox" name="areas" value="Front desk" data-label="Front desk"><span>Front desk</span></label><label class="q-chip"><input type="checkbox" name="areas" value="Bookings & phones" data-label="Bookings & phones"><span>Bookings & phones</span></label><label class="q-chip"><input type="checkbox" name="areas" value="Billing & Medicare" data-label="Billing & Medicare"><span>Billing & Medicare</span></label><label class="q-chip"><input type="checkbox" name="areas" value="Medical records" data-label="Medical records"><span>Medical records</span></label><label class="q-chip"><input type="checkbox" name="areas" value="Team leadership" data-label="Team leadership"><span>Team leadership</span></label></div></div>
+              </div>
+            </div>
+
+            <h2 class="q-h" tabindex="-1" style="margin-top: 34px">About you</h2>
+            <div class="q-grid" style="margin-top: 16px">
+              <div class="q-field"><label for="w-fn">First name</label><input id="w-fn" name="fn" type="text" autocomplete="given-name" required></div>
+              <div class="q-field"><label for="w-ln">Last name</label><input id="w-ln" name="ln" type="text" autocomplete="family-name" required></div>
+              <div class="q-field"><label for="w-em">Email</label><input id="w-em" name="em" type="email" autocomplete="email" data-v="email" required></div>
+              <div class="q-field"><label for="w-mob">Mobile</label><input id="w-mob" name="mob" type="tel" autocomplete="tel" data-v="phone" required></div>
+            </div>
+            <div class="q-group" data-req="loc"><div class="q-q">Where would you like to work? <span class="q-why">Tick all that apply</span></div><div class="q-chips"><label class="q-chip"><input type="checkbox" name="loc" value="Roxburgh Park" data-label="Roxburgh Park"><span>Roxburgh Park</span></label><label class="q-chip"><input type="checkbox" name="loc" value="Deer Park" data-label="Deer Park"><span>Deer Park</span></label><label class="q-chip"><input type="checkbox" name="loc" value="Bacchus Marsh" data-label="Bacchus Marsh"><span>Bacchus Marsh</span></label><label class="q-chip"><input type="checkbox" name="loc" value="Taylors Lakes" data-label="Taylors Lakes"><span>Taylors Lakes</span></label><label class="q-chip"><input type="checkbox" name="loc" value="Happy to go anywhere" data-label="Happy to go anywhere"><span>Happy to go anywhere</span></label></div></div><div class="q-group" data-req="type"><div class="q-q">Type of work</div><div class="q-pills"><label class="q-pill"><input type="radio" name="type" value="Full-time" data-label="Full-time"><span>Full-time</span></label><label class="q-pill"><input type="radio" name="type" value="Part-time" data-label="Part-time"><span>Part-time</span></label><label class="q-pill"><input type="radio" name="type" value="Casual" data-label="Casual"><span>Casual</span></label><label class="q-pill"><input type="radio" name="type" value="Locum" data-label="Locum"><span>Locum</span></label><label class="q-pill"><input type="radio" name="type" value="Open to discuss" data-label="Open to discuss"><span>Open to discuss</span></label></div></div>
+            <div class="q-grid">
+              <div class="q-field"><label for="w-from">Available from <em>(optional)</em></label><input id="w-from" name="from" type="text" placeholder="For example, February 2027"></div>
+              <div class="q-field"><label for="w-cv">CV <em>(optional)</em></label><input id="w-cv" name="cv" type="file" accept=".pdf,.doc,.docx" style="padding-top: 11px"></div>
+              <div class="q-field q-span"><label for="w-msg">Anything you’d like us to know? <em>(optional)</em></label><textarea id="w-msg" name="msg" rows="3" placeholder="Why inOne, what you’re looking for, or questions you have."></textarea></div>
+            </div>
+
+            <label class="q-consent" data-req="consent"><input type="checkbox" name="consent" value="yes"><span class="ind"></span><span>I’m happy for inOne Imaging to contact me about opportunities, and to keep my details as described in the <a href="#">Privacy policy</a>.</span></label>
+
+            <p class="q-error" role="alert" data-error hidden>Please check the highlighted questions.</p>
+            <div class="q-nav"><span class="q-nav-note"></span><button type="submit" class="btn btn-primary btn-lg" data-submit>Send expression of interest</button></div>
+          </form>
+        </div>
+
+        <div class="q-card q-done" data-done hidden>
+          <div class="q-tick" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+          <h2 class="q-h" tabindex="-1" data-done-h>Thanks. We’ve got it.</h2>
+          <p class="q-sub">A member of our team will be in touch to talk about where you might fit. [CONFIRM TIMING]</p>
+          <div data-summary></div>
+          <div class="q-done-actions">
+            <a class="btn btn-primary" href="Main.dc.html">Back to home</a>
+            <button type="button" class="btn btn-ghost" data-restart>Send another</button>
+          </div>
+          <p class="q-proto">Prototype only: nothing is sent from this page.</p>
+        </div>
+      </div>
+
+      <aside class="q-aside" aria-label="About working at inOne">
+        <div class="q-side-card">
+          <h3>Why inOne</h3>
+          <ol class="q-steps">
+            <li><b>1</b><span><strong>Radiologist-led</strong>Clinical decisions are made by the people who read the scans.</span></li>
+            <li><b>2</b><span><strong>Specialist reporting</strong>Subspecialty expertise, close to home.</span></li>
+            <li><b>3</b><span><strong>Four clinics</strong>Roxburgh Park, Deer Park, Bacchus Marsh and Taylors Lakes.</span></li>
+          </ol>
+        </div>
+        <div class="q-side-card q-side-call">
+          <span class="q-side-k">Prefer to talk first?</span>
+          <a href="Clinics.dc.html" class="q-side-tel">1300 765 456</a>
+          <span class="q-side-s">Ask for the practice team.</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

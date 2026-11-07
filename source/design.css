@@ -394,3 +394,55 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   .doors .door-btns{flex-direction:column;flex-wrap:nowrap!important;gap:8px!important}
   .doors .door-btns .btn{min-height:42px!important}
 }
+
+/* ---------- Costs & billing ---------- */
+.cost-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.cost-steps li{display:flex;gap:16px;padding:24px;background:#fff;border:1px solid var(--hair);border-radius:20px;box-shadow:var(--sh-1)}
+.cost-steps b{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--plum);color:#fff;font:600 15px var(--font)}
+.cost-steps h3{margin:2px 0 6px;font-size:18px}
+.cost-steps p{margin:0;color:var(--ink-2);line-height:1.55;font-size:15.5px}
+.cost-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.cost-grid h3{margin:12px 0 6px;font-size:18px}
+.cost-grid p{margin:0;color:var(--ink-2);line-height:1.55;font-size:15.5px}
+.fee-flag{display:inline-block;padding:6px 12px;border-radius:999px;background:#FFF6DD;border:1px solid #F0DDA0;color:#4A3A05;font:600 12.5px var(--font)}
+.fee-wrap{background:#fff;border:1px solid var(--hair);border-radius:20px;box-shadow:var(--sh-2);overflow:hidden}
+.fee-table{width:100%;border-collapse:collapse;font:400 16px/1.4 var(--font)}
+.fee-table thead th{padding:14px 20px;text-align:right;background:var(--soft);color:var(--mute);font:600 13px var(--font);letter-spacing:.02em;text-transform:uppercase;border-bottom:1px solid var(--hair)}
+.fee-table thead th:first-child{text-align:left}
+.fee-table tbody th[scope="row"]{padding:15px 20px;text-align:left;font-weight:500;color:var(--ink)}
+.fee-table td{padding:15px 20px;text-align:right;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.fee-table tbody tr+tr th,.fee-table tbody tr+tr td{border-top:1px solid var(--hair)}
+.fee-table .fee-group th{padding:12px 20px;text-align:left;background:#FBFAFE;color:var(--plum-deep);font:600 13px var(--font);letter-spacing:.04em;text-transform:uppercase}
+.fee-note{margin-left:8px;color:var(--mute);font-weight:500;text-transform:none;letter-spacing:0}
+.fee-table td.fee-pay{color:var(--plum-deep);font-weight:600}
+.fee-table td.fee-quote{color:var(--mute)}
+.cost-note{display:flex;flex-direction:column;gap:4px;margin-top:20px;padding:18px 22px;border-radius:16px;background:var(--tint);color:var(--plum-night);font:400 15.5px/1.55 var(--font)}
+.cost-note strong{font-weight:600}
+.faq details{border-bottom:1px solid var(--hair);padding:4px 0}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;font:500 17px/1.4 var(--font);color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font-size:22px;color:var(--plum);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 16px;color:var(--ink-2);line-height:1.6;font-size:16px;max-width:64ch}
+@media (max-width:900px){
+  .cost-steps{grid-template-columns:minmax(0,1fr)}
+  .cost-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .cost-grid{grid-template-columns:minmax(0,1fr);gap:20px}
+  .cost-steps li{padding:18px}
+  .fee-table thead{display:none}
+  .fee-table,.fee-table tbody{display:block}
+  .fee-table tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px 8px;padding:14px 16px}
+  .fee-table tbody tr+tr th,.fee-table tbody tr+tr td{border-top:0}
+  .fee-table tbody tr+tr{border-top:1px solid var(--hair)}
+  .fee-table tbody th[scope="row"]{grid-column:1/-1;padding:0 0 4px;font-weight:600}
+  .fee-table td{padding:0;text-align:left;font-size:15px}
+  .fee-table td::before{content:attr(data-l);display:block;color:var(--mute);font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:1px}
+  .fee-table td.fee-quote{grid-column:1/3}
+  .fee-table .fee-group{display:block;padding:0}
+  .fee-table .fee-group th{display:block;padding:10px 16px}
+}
+
+.ind.r{border-radius:50%}
+.q-field input[type=file]{padding:10px 12px;font-size:14px}

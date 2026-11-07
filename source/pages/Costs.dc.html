@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>inOne Imaging — Costs &amp; billing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F6FB}
+a{color:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FB; width: 100%">
+  <dc-import name="Header" mode="patient" active="costs" hint-size="100%,128px"></dc-import>
+
+  <section class="mesh">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 64px 40px 56px">
+      <span class="eyebrow"><i></i>Costs &amp; billing</span>
+      <h1 style="margin: 18px 0 16px; max-width: 820px; font-size: clamp(34px, 4.6vw, 58px); color: #14183A">Clear fees. <span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">No surprises.</span></h1>
+      <p style="margin: 0 0 28px; max-width: 640px; font-size: 19px; line-height: 1.55; color: #3B3F63">Specialist radiologist care, priced openly and competitively. You’ll know your exact out-of-pocket cost before you book, and it’s the same fee for every patient.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="btn btn-primary btn-lg" href="#fees">See our fees</a>
+        <a class="btn btn-ghost btn-lg" href="Portals.dc.html#patient">Book online</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 8px 40px 72px">
+    <ol class="cost-steps">
+      <li><b>1</b><div><h3>Your exact price, at booking</h3><p>We confirm your out-of-pocket cost before you commit, so there’s nothing to work out later.</p></div></li>
+      <li><b>2</b><div><h3>Pay on the day</h3><p>Settle at the front desk when you arrive. No separate invoices or follow-up bills.</p></div></li>
+      <li><b>3</b><div><h3>Your rebate, straight back</h3><p>We lodge your Medicare claim on the spot. Your rebate returns to your bank account immediately, so you keep only the difference.</p></div></li>
+    </ol>
+  </section>
+
+  <section style="background: #FFFFFF; border-top: 1px solid #E4E2EE; border-bottom: 1px solid #E4E2EE">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 64px 40px">
+      <h2 style="margin: 0 0 8px; font-size: 32px">Fair pricing, openly published</h2>
+      <p style="margin: 0 0 32px; max-width: 620px; color: #3B3F63; font-size: 17px; line-height: 1.55">We’re a small, radiologist-led practice, not a high-volume chain. We price to be competitive and we show you the numbers.</p>
+      <div class="cost-grid">
+        <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><h3>Upfront</h3><p>Exact out-of-pocket for every scan and procedure, published below.</p></div>
+        <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="1.6"><path d="M4 12h16M4 7h16M4 17h10"></path></svg><h3>One fee</h3><p>The same fee for every patient. No hidden loadings or booking charges.</p></div>
+        <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="1.6"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4.5 4.5-7 8-7s7 2.5 8 7"></path></svg><h3>Specialist-reported</h3><p>Every scan is reported by a specialist radiologist, with the report included in your fee. [CONFIRM]</p></div>
+        <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><h3>No surprise extras</h3><p>If anything changes on the day, we explain the cost first and you decide.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees" style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 24px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 8px">
+      <h2 style="margin: 0; font-size: 32px">What you’ll pay</h2>
+      <span class="fee-flag">Example figures · to be confirmed</span>
+    </div>
+    <p style="margin: 0 0 24px; max-width: 680px; color: #3B3F63; font-size: 17px; line-height: 1.55">Your cost is our fee minus your Medicare rebate. Pay on the day and your rebate comes straight back.</p>
+    <div class="fee-wrap">
+      <table class="fee-table">
+        <thead><tr><th scope="col">Scan or procedure</th><th scope="col">Our fee</th><th scope="col">Medicare rebate</th><th scope="col">You pay</th></tr></thead>
+        <tbody>
+<tr class="fee-group"><th colspan="4" scope="colgroup">X-ray &amp; ultrasound</th></tr>
+<tr><th scope="row">X-ray, one area</th><td data-l="Our fee">$70</td><td data-l="Rebate">$40</td><td data-l="You pay" class="fee-pay">$30</td></tr>
+<tr><th scope="row">Ultrasound, abdomen</th><td data-l="Our fee">$150</td><td data-l="Rebate">$100</td><td data-l="You pay" class="fee-pay">$50</td></tr>
+<tr><th scope="row">Ultrasound, pelvis</th><td data-l="Our fee">$150</td><td data-l="Rebate">$100</td><td data-l="You pay" class="fee-pay">$50</td></tr>
+<tr><th scope="row">Ultrasound, shoulder or other joint</th><td data-l="Our fee">$140</td><td data-l="Rebate">$90</td><td data-l="You pay" class="fee-pay">$50</td></tr>
+<tr class="fee-group"><th colspan="4" scope="colgroup">CT</th></tr>
+<tr><th scope="row">CT brain</th><td data-l="Our fee">$260</td><td data-l="Rebate">$200</td><td data-l="You pay" class="fee-pay">$60</td></tr>
+<tr><th scope="row">CT chest</th><td data-l="Our fee">$330</td><td data-l="Rebate">$260</td><td data-l="You pay" class="fee-pay">$70</td></tr>
+<tr><th scope="row">CT abdomen &amp; pelvis</th><td data-l="Our fee">$380</td><td data-l="Rebate">$310</td><td data-l="You pay" class="fee-pay">$70</td></tr>
+<tr class="fee-group"><th colspan="4" scope="colgroup">MRI</th></tr>
+<tr><th scope="row">MRI knee</th><td data-l="Our fee">$340</td><td data-l="Rebate">$265</td><td data-l="You pay" class="fee-pay">$75</td></tr>
+<tr><th scope="row">MRI lumbar spine</th><td data-l="Our fee">$390</td><td data-l="Rebate">$290</td><td data-l="You pay" class="fee-pay">$100</td></tr>
+<tr class="fee-group"><th colspan="4" scope="colgroup">Bone density &amp; procedures</th></tr>
+<tr><th scope="row">DEXA bone density</th><td data-l="Our fee">$120</td><td data-l="Rebate">$90</td><td data-l="You pay" class="fee-pay">$30</td></tr>
+<tr><th scope="row">Image-guided spinal injection</th><td data-l="Our fee">$420</td><td data-l="Rebate">$280</td><td data-l="You pay" class="fee-pay">$140</td></tr>
+<tr class="fee-group"><th colspan="4" scope="colgroup">Screening <span class="fee-note">Not Medicare-rebateable</span></th></tr>
+<tr><th scope="row">Heart health: CT calcium score</th><td data-l="Our fee" colspan="2" class="fee-quote">Quoted when you enquire</td><td data-l="You pay" class="fee-pay">Full fee</td></tr>
+<tr><th scope="row">Lung health: low-dose CT</th><td data-l="Our fee" colspan="2" class="fee-quote">Quoted when you enquire</td><td data-l="You pay" class="fee-pay">Full fee</td></tr>
+<tr><th scope="row">Brain aneurysm / AVM screening MRI</th><td data-l="Our fee" colspan="2" class="fee-quote">Quoted when you enquire</td><td data-l="You pay" class="fee-pay">Full fee</td></tr>
+<tr><th scope="row">Women’s health check</th><td data-l="Our fee" colspan="2" class="fee-quote">Quoted when you enquire</td><td data-l="You pay" class="fee-pay">Full fee</td></tr>
+<tr><th scope="row">Abdominal screening</th><td data-l="Our fee" colspan="2" class="fee-quote">Quoted when you enquire</td><td data-l="You pay" class="fee-pay">Full fee</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cost-note">
+      <strong>Concession and pension card holders</strong>
+      <span>We bulk bill eligible concession and pension card holders on Medicare-rebateable scans, so you pay nothing out of pocket. Bring your card on the day. [CONFIRM ELIGIBLE CARDS]</span>
+    </div>
+  </section>
+
+  <section style="max-width: 860px; margin: 0 auto; padding: 56px 40px 64px">
+    <h2 style="margin: 0 0 20px; font-size: 30px">Common questions</h2>
+    <div class="faq"><details><summary>Do I need a referral?</summary><p>For a Medicare rebate, yes: you’ll need a request from your doctor. Without one you can still be scanned, but you’ll pay the full fee with no rebate. We’ll tell you which applies when you book.</p></details><details><summary>When do I pay?</summary><p>On the day, at the front desk. If your scan is Medicare-rebateable, we lodge your claim on the spot and the rebate goes straight back to your bank account.</p></details><details><summary>What if my scan changes on the day?</summary><p>We’ll never add a fee without telling you first. If a radiologist recommends something extra, we explain the cost and you decide before we proceed.</p></details><details><summary>Why is screening priced differently?</summary><p>Screening scans aren’t covered by Medicare, so there’s no rebate. We quote the full fee by phone when you enquire, and nothing is booked or charged until you say yes.</p></details></div>
+  </section>
+
+  <section style="background: #1E1A45; color: #FFFFFF">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 56px 40px; display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between">
+      <div><h2 style="margin: 0 0 8px; font-size: 30px; color: #FFFFFF">Get your exact price</h2><span style="color: #C9C8DC; font-size: 17px">Book online, or call us and we’ll quote you on the spot.</span></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="btn btn-light btn-lg" href="Portals.dc.html#patient">Book online</a>
+        <a class="btn btn-lg door-ghost" href="Clinics.dc.html">Call 1300 765 456</a>
+        <a class="btn btn-lg door-ghost" href="Screening-Enquiry.dc.html">Screening enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
+      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
+      <span>© inOne Imaging · Privacy · Accessibility</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
