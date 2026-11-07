@@ -187,6 +187,7 @@ html = '''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<script>(function(){var m=/[?&]nav=([abc])/.exec(location.search);if(m)document.documentElement.setAttribute('data-nav',m[1])})()</script>
 <title>inOne Imaging — Website prototype</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
