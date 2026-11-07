@@ -519,3 +519,18 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
 @media (max-width:640px){
   .q-layout{padding-left:20px!important;padding-right:20px!important}
 }
+
+/* ---------- Mobile nav: four tabs fit the screen; longer menus scroll with end padding ---------- */
+@media (max-width:640px){
+  .nav-scroll:not(:has(.navlink:nth-child(5))){margin-left:-8px!important;margin-right:-8px!important;padding-right:0!important;width:auto!important;justify-content:space-between;overflow:visible}
+  .nav-scroll:not(:has(.navlink:nth-child(5))) .navlink{padding:0 9px;font-size:14px}
+  .nav-scroll:has(.navlink:nth-child(5))::after{content:"";flex:0 0 24px}
+}
+@media (max-width:640px){
+  .nav-scroll:not(:has(.navlink:nth-child(5))){margin-left:-6px!important;margin-right:-6px!important;overflow-x:auto;scrollbar-width:none}
+  .nav-scroll:not(:has(.navlink:nth-child(5)))::-webkit-scrollbar{display:none}
+  .nav-scroll:not(:has(.navlink:nth-child(5))) .navlink{padding:0 6px;font-size:13.5px}
+}
+@media (max-width:360px){
+  .nav-scroll:not(:has(.navlink:nth-child(5))) .navlink{padding:0 4px;font-size:13px}
+}
