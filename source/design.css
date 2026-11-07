@@ -446,3 +446,6 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
 .ind.r{border-radius:50%}
 .q-field input[type=file]{padding:10px 12px;font-size:14px}
+
+.fee-table td.fee-bb{color:#2F7D54;font-weight:500}
+@media (max-width:640px){.fee-table td.fee-bb{grid-column:1/3}}
