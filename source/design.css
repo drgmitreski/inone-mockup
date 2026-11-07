@@ -451,3 +451,9 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 @media (max-width:640px){.fee-table td.fee-bb{grid-column:1/3}}
 .fee-table td.fee-pob{color:var(--plum-deep);font-weight:500;white-space:nowrap}
 @media (max-width:640px){.fee-table tr{grid-template-columns:repeat(2,minmax(0,1fr))!important}.fee-table td.fee-bb{grid-column:auto!important}}
+
+.team-tabs{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:var(--tint);border:1px solid rgba(90,69,147,.08);max-width:100%;overflow-x:auto;scrollbar-width:none}
+.team-tabs::-webkit-scrollbar{display:none}
+.team-tabs .navlink{min-height:38px}
+.team-tabs .navlink[aria-current="page"]{background:#fff;box-shadow:var(--sh-1)}
+@media (max-width:640px){.team-tabs{display:flex}.team-tabs .navlink{padding:0 10px;font-size:13.5px;flex:1;justify-content:center}}
