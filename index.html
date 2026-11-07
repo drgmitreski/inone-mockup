@@ -353,13 +353,40 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   .q-sub{margin-bottom:18px;font-size:15px}
 }
 
+/* ---------- Mobile home: one screen, no scrolling ---------- */
+@media (max-width:640px){
+  .home-wrap{min-height:100vh!important;min-height:100svh!important}
+  .home-wrap main>div{justify-content:center;padding:12px 0 16px!important}
+  .home-wrap main section:first-child{padding:0 20px 18px!important;gap:12px!important}
+  .home-wrap .eyebrow{display:none}
+  .home-wrap h1{font-size:clamp(30px,9vw,38px)!important}
+  .home-wrap .chip{padding:8px 16px 10px!important;gap:6px!important}
+  .home-wrap .chip>span:last-child{font-size:14px!important}
+  /* two doors side by side */
+  .doors{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important;padding:0 14px!important}
+  .doors .door{border-radius:20px;flex:none!important}
+  .doors .door>div:first-child{flex-direction:column!important;flex-wrap:nowrap!important;align-items:stretch!important;justify-content:space-between!important;gap:14px!important;padding:16px 14px!important}
+  .doors .door>div:first-child>div>span:first-child{font-size:12.5px!important}
+  .doors .door>div:first-child>div>span:last-child{white-space:normal!important;font-size:19px!important;line-height:1.15!important}
+  .doors .door .btn{width:100%;min-height:44px!important;padding:0 10px;font-size:14px}
+  .doors .door .btn svg{display:none}
+  .doors .door-links{display:none}
+  /* footer: keep it light */
+  .home-wrap footer>div{padding:12px 20px!important;font-size:13px}
+  .home-wrap footer img{height:28px!important}
+}
+@media (max-width:640px) and (max-height:700px){
+  .home-wrap footer>div>div:last-child{display:none!important}
+  .home-wrap .chip>span:last-child{display:none!important}
+}
+
 </style>
 </head>
 <body>
 <section class="page" data-page="home">
 
 
-<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FB; width: 100%; min-height: 100vh; display: flex; flex-direction: column">
+<div class="home-wrap" style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FB; width: 100%; min-height: 100vh; display: flex; flex-direction: column">
   
 
 <div style="display: contents; font-family: 'Inter', system-ui, sans-serif; color: #14183A">
@@ -417,7 +444,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       <section style="width: 100%; max-width: 1200px; box-sizing: border-box; margin: 0 auto; padding: 0 40px clamp(18px, 3.4vh, 40px); text-align: center; display: flex; flex-direction: column; align-items: center; gap: clamp(10px, 1.7vh, 18px)">
         <span class="eyebrow"><i></i>Radiologist-led imaging in Melbourne’s north and west</span>
         <h1 style="margin: 0; font-weight: 400; font-size: clamp(32px, min(4.4vw, 6.6vh), 66px); color: #14183A">Specialist radiologists. <br class="br-tall"><span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">Close to home.</span></h1>
-        <p style="margin: 0; max-width: 760px; font-size: clamp(16px, 2vh, 20px); line-height: 1.55; color: #3B3F63">A small team of specialist radiologists who take the time to explain your results.</p>
+        <p class="hide-xs" style="margin: 0; max-width: 760px; font-size: clamp(16px, 2vh, 20px); line-height: 1.55; color: #3B3F63">A small team of specialist radiologists who take the time to explain your results.</p>
         <a class="chip" href="#radiologists" style="text-decoration: none; display: inline-flex; align-items: center; gap: 14px; margin-top: 4px; padding: 6px 20px 6px 8px; border-radius: 999px; background: rgba(255,255,255,0.85); border: 1px solid rgba(90,69,147,0.14); box-shadow: 0 1px 2px rgba(30,26,69,.06)">
         <span style="display: flex"><span style="display: flex"><span role="img" aria-label="Dr Goran Mitreski" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">GM<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/d1349e826_PHOTO-18-43-33_inOne_white.jpg) no-repeat; background-size: 96.5px 105.2px; background-position: -20.2px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="A/Prof Julian Maingard" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">JM<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/85aed73d6_PHOTO-18-43-32_inOne_B_white.jpg) no-repeat; background-size: 87.7px 86.8px; background-position: -15.8px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="A/Prof Terry Kok" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">TK<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/2b2d0c497_New_doctor_matched_v2_inOneterry.jpg) no-repeat; background-size: 74.7px 112px; background-position: -7.9px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="Dr Daniel Liu" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">DL<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/bbb1319b2_PHOTO-11-49-20_inOne_white.jpg) no-repeat; background-size: 66.1px 88px; background-position: -5px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="Dr Kevin Chen" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">KC<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/d243631f8_PHOTO-12-11-16_shade_matched_inOne.jpg) no-repeat; background-size: 93.7px 138.9px; background-position: -18.9px -0.8px"></span></span></span></span>
         <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #43337A">Meet our radiologists <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -425,7 +452,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       </section>
 
       <!-- Doors: mirrored -->
-      <section aria-label="Choose your path" style="width: 100%; max-width: 1120px; box-sizing: border-box; margin: 0 auto; padding: 0 40px; display: flex; flex-wrap: wrap; gap: 20px">
+      <section class="doors" aria-label="Choose your path" style="width: 100%; max-width: 1120px; box-sizing: border-box; margin: 0 auto; padding: 0 40px; display: flex; flex-wrap: wrap; gap: 20px">
         <div class="door door-patient" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box">
           <div style="padding: clamp(18px, 2.8vh, 32px) clamp(22px, 2.2vw, 32px); display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; justify-content: space-between; flex: 1">
             <div style="display: flex; flex-direction: column; gap: 6px">
