@@ -388,3 +388,9 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   section[aria-label="Quick actions"] a>span{display:none}
   section[aria-label="Quick actions"] a>strong{font-size:15px!important}
 }
+.door-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.38)}
+.door-ghost:hover{background:rgba(255,255,255,.2)}
+@media (max-width:640px){
+  .doors .door-btns{flex-direction:column;flex-wrap:nowrap!important;gap:8px!important}
+  .doors .door-btns .btn{min-height:42px!important}
+}
