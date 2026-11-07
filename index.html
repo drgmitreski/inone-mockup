@@ -549,6 +549,24 @@ a[style*="min-height: 4"][style*="border-radius: 8px"][style*="border: 1.5px sol
   .nav-scroll:not(:has(.navlink:nth-child(5))){display:flex!important;flex-wrap:nowrap!important;justify-content:space-between!important;width:calc(100% + 12px)!important;max-width:none}
 }
 
+/* ---------- Mobile: subtle embossed menu tabs ---------- */
+@media (max-width:640px){
+  .nav-scroll .navlink{
+    background:linear-gradient(180deg,#FFFFFF 0%,#F4F1FB 100%);
+    box-shadow:0 0 0 1px rgba(90,69,147,.09),0 1px 2px rgba(30,26,69,.10),inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(90,69,147,.08);
+    color:var(--ink-2);
+  }
+  .nav-scroll .navlink[aria-current="page"]{
+    background:linear-gradient(180deg,#E3DBF4 0%,#EDE8F9 100%);
+    box-shadow:0 0 0 1px rgba(90,69,147,.16),inset 0 2px 4px rgba(30,26,69,.16),inset 0 -1px 0 rgba(255,255,255,.8);
+    color:var(--plum-deep);
+  }
+  .nav-scroll .navlink:active{
+    background:linear-gradient(180deg,#DCD2F1 0%,#E8E2F7 100%);
+    box-shadow:0 0 0 1px rgba(90,69,147,.16),inset 0 2px 4px rgba(30,26,69,.2);
+  }
+}
+
 </style>
 </head>
 <body>
