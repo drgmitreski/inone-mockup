@@ -457,3 +457,12 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 .team-tabs .navlink{min-height:38px}
 .team-tabs .navlink[aria-current="page"]{background:#fff;box-shadow:var(--sh-1)}
 @media (max-width:640px){.team-tabs{display:flex}.team-tabs .navlink{padding:0 10px;font-size:13.5px;flex:1;justify-content:center}}
+
+.role-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.role-card{padding:24px;background:#fff;border:1px solid var(--hair);border-radius:20px;box-shadow:var(--sh-1)}
+.role-card h3{margin:0 0 6px;font-size:18px}
+.role-card p{margin:0;color:var(--ink-2);line-height:1.55;font-size:15.5px}
+.team-tabs .navlink{border:0;font-family:var(--font);cursor:pointer;background:transparent}
+.team-tabs .navlink[aria-current="page"]{background:#fff}
+@media (max-width:900px){.role-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.team-tabs{display:grid!important;grid-template-columns:1fr 1fr;border-radius:20px;overflow:visible;width:100%}.team-tabs .navlink{border-radius:16px;padding:0 6px}}

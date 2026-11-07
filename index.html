@@ -469,6 +469,15 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 .team-tabs .navlink[aria-current="page"]{background:#fff;box-shadow:var(--sh-1)}
 @media (max-width:640px){.team-tabs{display:flex}.team-tabs .navlink{padding:0 10px;font-size:13.5px;flex:1;justify-content:center}}
 
+.role-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.role-card{padding:24px;background:#fff;border:1px solid var(--hair);border-radius:20px;box-shadow:var(--sh-1)}
+.role-card h3{margin:0 0 6px;font-size:18px}
+.role-card p{margin:0;color:var(--ink-2);line-height:1.55;font-size:15.5px}
+.team-tabs .navlink{border:0;font-family:var(--font);cursor:pointer;background:transparent}
+.team-tabs .navlink[aria-current="page"]{background:#fff}
+@media (max-width:900px){.role-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.team-tabs{display:grid!important;grid-template-columns:1fr 1fr;border-radius:20px;overflow:visible;width:100%}.team-tabs .navlink{border-radius:16px;padding:0 6px}}
+
 </style>
 </head>
 <body>
@@ -514,11 +523,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
         
@@ -540,7 +545,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         <span class="eyebrow"><i></i>Radiologist-led imaging in Melbourne’s north and west</span>
         <h1 style="margin: 0; font-weight: 400; font-size: clamp(32px, min(4.4vw, 6.6vh), 66px); color: #14183A">Specialist radiologists. <br class="br-tall"><span style="background: linear-gradient(95deg, #5A4593 10%, #8A6FD6 60%, #C26BA8 100%); -webkit-background-clip: text; background-clip: text; color: transparent">Close to home.</span></h1>
         <p class="hide-xs" style="margin: 0; max-width: 760px; font-size: clamp(16px, 2vh, 20px); line-height: 1.55; color: #3B3F63">A small team of specialist radiologists who take the time to explain your results.</p>
-        <a class="chip" href="#radiologists" style="text-decoration: none; display: inline-flex; align-items: center; gap: 14px; margin-top: 4px; padding: 6px 20px 6px 8px; border-radius: 999px; background: rgba(255,255,255,0.85); border: 1px solid rgba(90,69,147,0.14); box-shadow: 0 1px 2px rgba(30,26,69,.06)">
+        <a class="chip" href="#people" style="text-decoration: none; display: inline-flex; align-items: center; gap: 14px; margin-top: 4px; padding: 6px 20px 6px 8px; border-radius: 999px; background: rgba(255,255,255,0.85); border: 1px solid rgba(90,69,147,0.14); box-shadow: 0 1px 2px rgba(30,26,69,.06)">
         <span style="display: flex"><span style="display: flex"><span role="img" aria-label="Dr Goran Mitreski" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">GM<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/d1349e826_PHOTO-18-43-33_inOne_white.jpg) no-repeat; background-size: 96.5px 105.2px; background-position: -20.2px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="Dr Daniel Liu" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">DL<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/bbb1319b2_PHOTO-11-49-20_inOne_white.jpg) no-repeat; background-size: 66.1px 88px; background-position: -5px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="A/Prof Julian Maingard" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">JM<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/85aed73d6_PHOTO-18-43-32_inOne_B_white.jpg) no-repeat; background-size: 87.7px 86.8px; background-position: -15.8px 0px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="Dr Kevin Chen" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">KC<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/d243631f8_PHOTO-12-11-16_shade_matched_inOne.jpg) no-repeat; background-size: 93.7px 138.9px; background-position: -18.9px -0.8px"></span></span></span><span style="margin-left: -14px; display: flex"><span role="img" aria-label="A/Prof Terry Kok" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">TK<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/2b2d0c497_New_doctor_matched_v2_inOneterry.jpg) no-repeat; background-size: 74.7px 112px; background-position: -7.9px 0px"></span></span></span></span>
         <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #43337A">Meet our radiologists <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </a>
@@ -627,11 +632,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
         
@@ -653,7 +654,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       <p style="margin: 0; font-size: 15px; font-weight: 600; color: #6B5A9E">Radiologist-led imaging in Melbourne’s north and west</p>
       <h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 560; font-size: clamp(32px, min(4.2vw, 6vh), 68px); line-height: 1.08; letter-spacing: -0.015em; color: #2A2340">Your scan, read by a radiologist <em style="font-weight: 400; color: #5A4593">you can actually meet.</em></h1>
       <p style="margin: 0; max-width: 820px; font-size: clamp(16px, 1.9vh, 20px); line-height: 1.55; color: #5A5370">A small team of specialist radiologists who take the time to explain your results.</p>
-      <a href="#radiologists" style="text-decoration: none; display: inline-flex; align-items: center; gap: 14px; margin-top: 4px; padding: 6px 18px 6px 8px; border-radius: 999px; background: rgba(255,255,255,0.75); border: 1px solid #E7E0F2">
+      <a href="#people" style="text-decoration: none; display: inline-flex; align-items: center; gap: 14px; margin-top: 4px; padding: 6px 18px 6px 8px; border-radius: 999px; background: rgba(255,255,255,0.75); border: 1px solid #E7E0F2">
         <span style="display: flex">
           <span role="img" aria-label="Dr Goran Mitreski" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">GM<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/d1349e826_PHOTO-18-43-33_inOne_white.jpg) no-repeat; background-size: 96.5px 105.2px; background-position: -20.2px 0px"></span></span>
           <span style="margin-left: -14px; display: flex"><span role="img" aria-label="Dr Daniel Liu" style="border: 3px solid #FFFFFF; box-sizing: content-box; position: relative; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; flex: none; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">DL<span style="position: absolute; inset: 0; background: url(https://media.base44.com/images/public/69a9f3dc05d4f7f2914e64a9/bbb1319b2_PHOTO-11-49-20_inOne_white.jpg) no-repeat; background-size: 66.1px 88px; background-position: -5px 0px"></span></span></span>
@@ -750,7 +751,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="false">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -1174,11 +1175,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
         
@@ -1351,7 +1348,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="false">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -1509,7 +1506,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="false">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -1673,7 +1670,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="false">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -1806,7 +1803,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="false">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -2230,7 +2227,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="page">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -2380,11 +2377,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
         
@@ -2485,239 +2478,6 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
           <span class="q-side-s">Ask for the practice team.</span>
         </div>
       </aside>
-    </div>
-  </section>
-
-  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
-      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
-      <span>© inOne Imaging · Privacy · Accessibility</span>
-    </div>
-  </footer>
-</div>
-
-</section>
-<section class="page" data-page="radiographers" hidden>
-
-
-<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FA; width: 100%">
-  
-
-<div style="display: contents; font-family: 'Inter', system-ui, sans-serif; color: #14183A">
-  <!-- Top bar: changes with audience -->
-  <div style="background: #FFFFFF; color: #1A1F4A; border-bottom: 1px solid #E3E1EC">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 12px 40px; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between">
-      <a href="#home" aria-label="inOne Imaging home" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; line-height: 1">
-        <span class="wm" style="font-size: 30px; font-weight: 700; letter-spacing: -0.01em; color: #214068; display: flex; align-items: center">in<svg aria-hidden="true" width="25" height="25" viewBox="0 0 28 28" style="margin: 0 1px"><g transform="rotate(-90 14 14)" fill="none" stroke-width="6" pathLength="100"><circle cx="14" cy="14" r="10.5" stroke="#B3A6D4" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-2"></circle><circle cx="14" cy="14" r="10.5" stroke="#214068" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-35.3"></circle><circle cx="14" cy="14" r="10.5" stroke="#214068" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-68.7"></circle></g></svg>ne</span>
-        <span class="wm" style="font-size: 11px; font-weight: 700; letter-spacing: 0.27em; color: #B3A6D4; margin-top: 4px; padding-left: 0.27em">IMAGING</span>
-      </a>
-
-      <div role="group" aria-label="View site as" style="display: flex; align-items: center; gap: 12px; font-size: 14px">
-        <span class="hide-sm" style="color: #5E6080">View site as</span>
-        <span class="seg ">
-          <a href="#patients" aria-current="false">Patient</a>
-          <a href="#referrers" aria-current="false">Clinician</a>
-        </span>
-      </div>
-
-      
-      
-      
-        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-          <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
-          <a class="btn btn-primary" href="#portals-patient">Book online</a>
-        </div>
-      
-    </div>
-  </div>
-
-  <!-- Clinician notice -->
-  
-
-  <!-- Audience menu (sticky) -->
-  <nav aria-label="Main menu" style="position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.86); -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid #E4E2EE">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
-      <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
-        
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="page">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
-        
-          <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
-        
-          <a class="navlink" href="#about" aria-current="false">About us</a>
-        
-          <a class="navlink" href="#work-with-us" aria-current="false">Work with us</a>
-        
-      </div>
-      <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
-    </div>
-  </nav>
-</div>
-
-
-  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 32px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
-    <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
-      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR RADIOGRAPHERS</span>
-      <h1 style="margin: 0; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">The people who look<br><span style="color: #5A4593">after you on the day.</span></h1>
-    </div>
-    <div style="flex: 1 1 420px; font-size: 18px; line-height: 1.55; color: #4A4D6A"><p style="margin: 0">Our radiographers perform your CT, MRI and X-ray scans. They explain what’s happening, look after your comfort and make sure we get the images our radiologists need.</p></div>
-  </section>
-
-  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px"><nav class="team-tabs" aria-label="Our team"><a class="navlink" href="#radiologists" aria-current="false">Radiologists</a><a class="navlink" href="#radiographers" aria-current="page">Radiographers</a><a class="navlink" href="#sonographers" aria-current="false">Sonographers</a></nav></div>
-
-  <section aria-labelledby="team-h" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
-    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
-      <h2 id="team-h" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our radiographers</h2>
-      <span class="fee-flag">Roles, photos and bios to come</span>
-    </div>
-    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
-      <span role="img" aria-label="Photo of Dev to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">D</span>
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Dev</h3>
-        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
-        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
-        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li></ul>
-      </div>
-    </article>
-    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
-      <span role="img" aria-label="Photo of Will to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">W</span>
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Will</h3>
-        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
-        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
-        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li></ul>
-      </div>
-    </article>
-  </section>
-
-  <section aria-label="Fees" style="background: #F3F0FA; border-top: 1px solid #E4E2EE; border-bottom: 1px solid #E4E2EE">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 22px 40px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between">
-      <span style="color: #3B3F63; font-size: 16px"><strong style="color: #43337A; font-weight: 600">Most CT, ultrasound, X-ray, DEXA and MRI scans are bulk billed.</strong> Where there’s a gap, you’ll know the exact amount before you book.</span>
-      <a href="#costs" style="color: #5A4593; font-weight: 600; text-decoration: none; white-space: nowrap">Costs &amp; billing →</a>
-    </div>
-  </section>
-
-  <footer style="background: #141838; color: #B7B6CE; font-size: 14px">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 24px 40px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between">
-      <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.2em; color: #FFFFFF">ALL CONNECTED. ALL IN ONE.</span>
-      <span>© inOne Imaging · Privacy · Accessibility</span>
-    </div>
-  </footer>
-</div>
-
-</section>
-<section class="page" data-page="sonographers" hidden>
-
-
-<div style="font-family: 'Inter', system-ui, sans-serif; color: #14183A; background: #F7F6FA; width: 100%">
-  
-
-<div style="display: contents; font-family: 'Inter', system-ui, sans-serif; color: #14183A">
-  <!-- Top bar: changes with audience -->
-  <div style="background: #FFFFFF; color: #1A1F4A; border-bottom: 1px solid #E3E1EC">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 12px 40px; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between">
-      <a href="#home" aria-label="inOne Imaging home" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; line-height: 1">
-        <span class="wm" style="font-size: 30px; font-weight: 700; letter-spacing: -0.01em; color: #214068; display: flex; align-items: center">in<svg aria-hidden="true" width="25" height="25" viewBox="0 0 28 28" style="margin: 0 1px"><g transform="rotate(-90 14 14)" fill="none" stroke-width="6" pathLength="100"><circle cx="14" cy="14" r="10.5" stroke="#B3A6D4" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-2"></circle><circle cx="14" cy="14" r="10.5" stroke="#214068" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-35.3"></circle><circle cx="14" cy="14" r="10.5" stroke="#214068" pathLength="100" stroke-dasharray="29.3 70.7" stroke-dashoffset="-68.7"></circle></g></svg>ne</span>
-        <span class="wm" style="font-size: 11px; font-weight: 700; letter-spacing: 0.27em; color: #B3A6D4; margin-top: 4px; padding-left: 0.27em">IMAGING</span>
-      </a>
-
-      <div role="group" aria-label="View site as" style="display: flex; align-items: center; gap: 12px; font-size: 14px">
-        <span class="hide-sm" style="color: #5E6080">View site as</span>
-        <span class="seg ">
-          <a href="#patients" aria-current="false">Patient</a>
-          <a href="#referrers" aria-current="false">Clinician</a>
-        </span>
-      </div>
-
-      
-      
-      
-        <div class="hdr-cta" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-          <a class="btn btn-ghost hide-sm" href="#portals">Portals</a>
-          <a class="btn btn-primary" href="#portals-patient">Book online</a>
-        </div>
-      
-    </div>
-  </div>
-
-  <!-- Clinician notice -->
-  
-
-  <!-- Audience menu (sticky) -->
-  <nav aria-label="Main menu" style="position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.86); -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid #E4E2EE">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
-      <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
-        
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="page">Our sonographers</a>
-        
-          <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
-        
-          <a class="navlink" href="#about" aria-current="false">About us</a>
-        
-          <a class="navlink" href="#work-with-us" aria-current="false">Work with us</a>
-        
-      </div>
-      <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
-    </div>
-  </nav>
-</div>
-
-
-  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 32px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
-    <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
-      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR SONOGRAPHERS</span>
-      <h1 style="margin: 0; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Ultrasound, done<br><span style="color: #5A4593">with care.</span></h1>
-    </div>
-    <div style="flex: 1 1 420px; font-size: 18px; line-height: 1.55; color: #4A4D6A"><p style="margin: 0">Our sonographers perform your ultrasound examinations, from general and musculoskeletal to women’s imaging, and work closely with our radiologists so your results are reviewed by a specialist.</p></div>
-  </section>
-
-  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px"><nav class="team-tabs" aria-label="Our team"><a class="navlink" href="#radiologists" aria-current="false">Radiologists</a><a class="navlink" href="#radiographers" aria-current="false">Radiographers</a><a class="navlink" href="#sonographers" aria-current="page">Sonographers</a></nav></div>
-
-  <section aria-labelledby="team-h" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
-    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
-      <h2 id="team-h" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our sonographers</h2>
-      <span class="fee-flag">Roles, photos and bios to come</span>
-    </div>
-    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
-      <span role="img" aria-label="Photo of Lidia to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">L</span>
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Lidia</h3>
-        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
-        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
-        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
-      </div>
-    </article>
-    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
-      <span role="img" aria-label="Photo of Will to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">W</span>
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Will</h3>
-        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
-        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
-        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
-      </div>
-    </article>
-    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
-      <span role="img" aria-label="Photo of Janet to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">J</span>
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Janet</h3>
-        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
-        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
-        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
-      </div>
-    </article>
-  </section>
-
-  <section aria-label="Fees" style="background: #F3F0FA; border-top: 1px solid #E4E2EE; border-bottom: 1px solid #E4E2EE">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 22px 40px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between">
-      <span style="color: #3B3F63; font-size: 16px"><strong style="color: #43337A; font-weight: 600">Most CT, ultrasound, X-ray, DEXA and MRI scans are bulk billed.</strong> Where there’s a gap, you’ll know the exact amount before you book.</span>
-      <a href="#costs" style="color: #5A4593; font-weight: 600; text-decoration: none; white-space: nowrap">Costs &amp; billing →</a>
     </div>
   </section>
 
@@ -2886,7 +2646,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 </div>
 
 </section>
-<section class="page" data-page="radiologists" hidden>
+<section class="page" data-page="people" hidden>
 
 
 <div style="font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1A1F4A; background: #F7F6FA; width: 100%">
@@ -2928,11 +2688,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="page">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="page">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
         
@@ -2948,19 +2704,24 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 
 
   <!-- Hero -->
-  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 56px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
+  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 32px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
     <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
-      <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR DOCTORS</span>
-      <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Meet the experts<br><span style="color: #5A4593">behind your care.</span></h1>
+      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR PEOPLE</span>
+      <h1 style="margin: 0; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">The people behind<br><span style="color: #5A4593">your care.</span></h1>
     </div>
-    <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; font-size: 18px; line-height: 1.55; color: #4A4D6A">
-      <p style="margin: 0">Our radiologists are the heart of inOne Imaging — fellowship-trained specialists dedicated to accurate diagnosis and compassionate, patient-centred care.</p>
-      <p style="margin: 0">From CT and ultrasound to interventional radiology and women’s imaging, our team brings world-class expertise to Roxburgh Park, Deer Park and Bacchus Marsh.</p>
-    </div>
+    <div style="flex: 1 1 420px; font-size: 18px; line-height: 1.55; color: #4A4D6A"><p style="margin: 0">Specialist radiologists, radiographers, sonographers and the team who keep everything running, working together across Roxburgh Park, Deer Park, Bacchus Marsh and Taylors Lakes.</p></div>
   </section>
 
-  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px"><nav class="team-tabs" aria-label="Our team"><a class="navlink" href="#radiologists" aria-current="page">Radiologists</a><a class="navlink" href="#radiographers" aria-current="false">Radiographers</a><a class="navlink" href="#sonographers" aria-current="false">Sonographers</a></nav></div>
+  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px">
+    <div class="team-tabs" role="tablist" aria-label="Our people">
+      <button type="button" role="tab" class="navlink" data-people-tab="radiologists" aria-current="page">Radiologists</button>
+      <button type="button" role="tab" class="navlink" data-people-tab="radiographers" aria-current="false">Radiographers</button>
+      <button type="button" role="tab" class="navlink" data-people-tab="sonographers" aria-current="false">Sonographers</button>
+      <button type="button" role="tab" class="navlink" data-people-tab="support" aria-current="false">Admin &amp; support</button>
+    </div>
+  </div>
 
+<div data-people-group="radiologists">
   <!-- Profiles -->
   <section aria-labelledby="team-h" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
     <h2 id="team-h" style="margin: 0; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our radiologists</h2>
@@ -3044,6 +2805,79 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       <div><dt style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; color: #5A4593">Community</dt><dd style="margin: 6px 0 0"><strong style="display: block; margin-bottom: 4px">Local commitment</strong><span style="color: #4A4D6A; line-height: 1.5">Dedicated to serving Melbourne’s growing outer-suburban communities, close to home.</span></dd></div>
     </dl>
   </section>
+
+</div>
+<div data-people-group="radiographers" hidden>
+  <section aria-labelledby="team-h-rg" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
+      <h2 id="team-h-rg" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our radiographers</h2>
+      <span class="fee-flag">Roles, photos and bios to come</span>
+    </div>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Dev to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">D</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Dev</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li></ul>
+      </div>
+    </article>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Will to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">W</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Will</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li></ul>
+      </div>
+    </article>
+  </section>
+</div>
+<div data-people-group="sonographers" hidden>
+  <section aria-labelledby="team-h-sg" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
+      <h2 id="team-h-sg" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our sonographers</h2>
+      <span class="fee-flag">Roles, photos and bios to come</span>
+    </div>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Lidia to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">L</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Lidia</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
+      </div>
+    </article>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Will to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">W</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Will</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
+      </div>
+    </article>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Janet to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">J</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Janet</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
+      </div>
+    </article>
+  </section>
+</div>
+<div data-people-group="support" hidden>
+  <section aria-labelledby="team-h-ad" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
+      <h2 id="team-h-ad" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Admin &amp; support</h2>
+      <span class="fee-flag">Names, photos and bios to come</span>
+    </div>
+    <p style="margin: 24px 0 28px; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A4D6A">The people who welcome you, book you in and make sure everything runs smoothly behind the scenes.</p>
+    <div class="role-grid"><div class="role-card"><h3>Front desk &amp; reception</h3><p>Your first point of contact, in person and on the phone.</p></div><div class="role-card"><h3>Bookings &amp; billing</h3><p>Appointments, referrals, and your out-of-pocket cost confirmed before you commit.</p></div><div class="role-card"><h3>Practice management</h3><p>Keeping each clinic running smoothly, so you and your doctor can focus on care.</p></div></div>
+  </section>
+</div>
 
   <section style="background: #4A3A84; color: #FFFFFF">
     <div style="max-width: 1320px; margin: 0 auto; padding: 44px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
@@ -3635,11 +3469,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="page">Our clinics</a>
         
@@ -3814,11 +3644,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
     <div style="max-width: 1320px; margin: 0 auto; padding: 8px 40px; display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; justify-content: space-between">
       <div class="nav-scroll" style="display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: -12px">
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
-        
-          <a class="navlink" href="#radiographers" aria-current="false">Our radiographers</a>
-        
-          <a class="navlink" href="#sonographers" aria-current="false">Our sonographers</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
           <a class="navlink" href="#clinics" aria-current="false">Our clinics</a>
         
@@ -3895,7 +3721,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
       <div style="max-width: 720px"><h2 style="margin: 0 0 6px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px">Ready to book your next scan?</h2><span style="color: #E3DCF3">Whether you’re a patient needing an appointment, a GP looking to refer, or a professional wanting to join our imaging team — we’d love to hear from you.</span></div>
       <div style="display: flex; flex-wrap: wrap; gap: 12px">
         <a href="#portals-patient" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; background: #FFFFFF; color: #4A3A84; border-radius: 8px; font-weight: 700">Book an appointment</a>
-        <a href="#radiologists" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; border: 1.5px solid #FFFFFF; border-radius: 8px; font-weight: 600">Meet our radiologists</a>
+        <a href="#people" style="text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; border: 1.5px solid #FFFFFF; border-radius: 8px; font-weight: 600">Meet our radiologists</a>
       </div>
     </div>
   </section>
@@ -3968,7 +3794,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
         
           <a class="navlink" href="#costs" aria-current="false">Costs &amp; billing</a>
         
-          <a class="navlink" href="#radiologists" aria-current="false">Our radiologists</a>
+          <a class="navlink" href="#people" aria-current="false">Our people</a>
         
       </div>
       <a class="hide-sm" href="#clinics" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 14px; color: #3B3F63"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A4593" stroke-width="2"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>1300 765 456</a>
@@ -4190,7 +4016,7 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
 (function(){
   function show(){
     var h = location.hash.replace(/^#\/?/, '').split(/--|\//);
-    var page = h[0] || 'home', anchor = h[1];
+    var page = h[0] || 'home', anchor = h[1]; if (page === 'radiologists') page = 'people';
     var target = document.querySelector('.page[data-page="' + page + '"]');
     if (!target) { page = 'home'; target = document.querySelector('.page[data-page="home"]'); }
     document.querySelectorAll('.page').forEach(function(s){ s.hidden = s !== target; });
@@ -4470,6 +4296,21 @@ input:checked+.ind::after{content:"";width:9px;height:5px;border:2px solid #fff;
   form.addEventListener('input', function(e){ var f = e.target.closest('.q-field'); if (f && f.classList.contains('err')) setErr(f, ''); });
   root.querySelector('[data-restart]').addEventListener('click', function(){ form.reset(); done.hidden = true; card.hidden = false; refresh(); window.scrollTo({ top: 0 }); });
   refresh();
+})();
+
+</script>
+<script>
+(function(){
+  var root = document.querySelector('.page[data-page="people"]'); if (!root) return;
+  var tabs = [].slice.call(root.querySelectorAll('[data-people-tab]')), groups = [].slice.call(root.querySelectorAll('[data-people-group]'));
+  function pick(k){
+    if (!groups.some(function(g){ return g.getAttribute('data-people-group') === k; })) return;
+    groups.forEach(function(g){ g.hidden = g.getAttribute('data-people-group') !== k; });
+    tabs.forEach(function(t){ var on = t.getAttribute('data-people-tab') === k; t.setAttribute('aria-current', on ? 'page' : 'false'); t.setAttribute('aria-selected', on ? 'true' : 'false'); });
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ pick(t.getAttribute('data-people-tab')); }); });
+  function fromHash(){ var m = /^#(?:people|radiologists)--(\w+)/.exec(location.hash); if (m) pick(m[1]); }
+  window.addEventListener('hashchange', fromHash); fromHash();
 })();
 
 </script>

@@ -18,19 +18,24 @@ a{color:inherit}a:hover{opacity:.85}
   <dc-import name="Header" mode="none" active="radiologists" hint-size="100%,128px"></dc-import>
 
   <!-- Hero -->
-  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 56px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
+  <section style="max-width: 1320px; margin: 0 auto; padding: 72px 40px 32px; display: flex; flex-wrap: wrap; gap: 24px 80px; align-items: flex-end">
     <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
-      <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR DOCTORS</span>
-      <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Meet the experts<br><span style="color: #5A4593">behind your care.</span></h1>
+      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.26em; color: #5A4593">OUR PEOPLE</span>
+      <h1 style="margin: 0; font-weight: 700; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">The people behind<br><span style="color: #5A4593">your care.</span></h1>
     </div>
-    <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; font-size: 18px; line-height: 1.55; color: #4A4D6A">
-      <p style="margin: 0">Our radiologists are the heart of inOne Imaging — fellowship-trained specialists dedicated to accurate diagnosis and compassionate, patient-centred care.</p>
-      <p style="margin: 0">From CT and ultrasound to interventional radiology and women’s imaging, our team brings world-class expertise to Roxburgh Park, Deer Park and Bacchus Marsh.</p>
-    </div>
+    <div style="flex: 1 1 420px; font-size: 18px; line-height: 1.55; color: #4A4D6A"><p style="margin: 0">Specialist radiologists, radiographers, sonographers and the team who keep everything running, working together across Roxburgh Park, Deer Park, Bacchus Marsh and Taylors Lakes.</p></div>
   </section>
 
-  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px"><nav class="team-tabs" aria-label="Our team"><a class="navlink" href="Radiologists.dc.html" aria-current="page">Radiologists</a><a class="navlink" href="Radiographers.dc.html" aria-current="false">Radiographers</a><a class="navlink" href="Sonographers.dc.html" aria-current="false">Sonographers</a></nav></div>
+  <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 24px">
+    <div class="team-tabs" role="tablist" aria-label="Our people">
+      <button type="button" role="tab" class="navlink" data-people-tab="radiologists" aria-current="page">Radiologists</button>
+      <button type="button" role="tab" class="navlink" data-people-tab="radiographers" aria-current="false">Radiographers</button>
+      <button type="button" role="tab" class="navlink" data-people-tab="sonographers" aria-current="false">Sonographers</button>
+      <button type="button" role="tab" class="navlink" data-people-tab="support" aria-current="false">Admin &amp; support</button>
+    </div>
+  </div>
 
+<div data-people-group="radiologists">
   <!-- Profiles -->
   <section aria-labelledby="team-h" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
     <h2 id="team-h" style="margin: 0; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our radiologists</h2>
@@ -114,6 +119,79 @@ a{color:inherit}a:hover{opacity:.85}
       <div><dt style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; color: #5A4593">Community</dt><dd style="margin: 6px 0 0"><strong style="display: block; margin-bottom: 4px">Local commitment</strong><span style="color: #4A4D6A; line-height: 1.5">Dedicated to serving Melbourne’s growing outer-suburban communities, close to home.</span></dd></div>
     </dl>
   </section>
+
+</div>
+<div data-people-group="radiographers" hidden>
+  <section aria-labelledby="team-h-rg" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
+      <h2 id="team-h-rg" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our radiographers</h2>
+      <span class="fee-flag">Roles, photos and bios to come</span>
+    </div>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Dev to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">D</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Dev</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li></ul>
+      </div>
+    </article>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Will to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">W</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Will</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Modality]</li></ul>
+      </div>
+    </article>
+  </section>
+</div>
+<div data-people-group="sonographers" hidden>
+  <section aria-labelledby="team-h-sg" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
+      <h2 id="team-h-sg" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Our sonographers</h2>
+      <span class="fee-flag">Roles, photos and bios to come</span>
+    </div>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Lidia to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">L</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Lidia</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
+      </div>
+    </article>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Will to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">W</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Will</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
+      </div>
+    </article>
+    <article style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 40px 0; border-bottom: 1px solid #D5D2E2">
+      <span role="img" aria-label="Photo of Janet to come" style="flex: none; width: 240px; height: 300px; border-radius: 14px; background: #E9E4F5; color: #4A3A84; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 56px">J</span>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 28px">Janet</h3>
+        <span style="font-weight: 600; color: #5A4593">[Role] · [Clinic]</span>
+        <p style="margin: 0; max-width: 680px; font-size: 17px; line-height: 1.6; color: #4A4D6A">[Bio: two or three sentences on training, years in practice, the scans they perform and what they enjoy about caring for patients.]</p>
+        <ul style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600"><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li><li style="padding: 6px 12px; border-radius: 999px; background: #EEEAF7">[Area of ultrasound]</li></ul>
+      </div>
+    </article>
+  </section>
+</div>
+<div data-people-group="support" hidden>
+  <section aria-labelledby="team-h-ad" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 72px">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 2px solid #1A1F4A">
+      <h2 id="team-h-ad" style="margin: 0; font-weight: 700; font-size: 28px; letter-spacing: -0.02em">Admin &amp; support</h2>
+      <span class="fee-flag">Names, photos and bios to come</span>
+    </div>
+    <p style="margin: 24px 0 28px; max-width: 640px; font-size: 17px; line-height: 1.55; color: #4A4D6A">The people who welcome you, book you in and make sure everything runs smoothly behind the scenes.</p>
+    <div class="role-grid"><div class="role-card"><h3>Front desk &amp; reception</h3><p>Your first point of contact, in person and on the phone.</p></div><div class="role-card"><h3>Bookings &amp; billing</h3><p>Appointments, referrals, and your out-of-pocket cost confirmed before you commit.</p></div><div class="role-card"><h3>Practice management</h3><p>Keeping each clinic running smoothly, so you and your doctor can focus on care.</p></div></div>
+  </section>
+</div>
 
   <section style="background: #4A3A84; color: #FFFFFF">
     <div style="max-width: 1320px; margin: 0 auto; padding: 44px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
