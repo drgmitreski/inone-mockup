@@ -45,10 +45,10 @@ The headshots come from `https://media.base44.com/images/public/69a9f3dc05d4f7f2
   - Must fit one screen with no scrolling. It's been checked at 1280×640 to 2391×1350.
   - Two symmetrical boxes: For patients and For referring doctors.
   - Under the headline: a row of five overlapping faces, then "Meet our radiologists →". No names in that row.
-  - The Medicare "we bulk bill" emblem goes in the bottom band.
+  - Bottom band: clinic addresses and "Most scans bulk billed · Costs" (no Medicare emblem).
   - Goran prefers the current home over the warm option, but wants it more inviting: less corporate, less "surgical/AI".
 - **"View site as: Patient | Clinician"** toggle on every page. Each audience gets its own menu.
-  - Top menu with no audience chosen: Our radiologists, Our clinics, About us.
+  - Top menu with no audience chosen: Our people, Our clinics, About us, Work with us.
 - **Three portals:** patient (one-time code), referral, and clinical (Synapse).
 - **Intervention in clinic:** complex pain, varicose veins, MSK ablation and sclerotherapy only. UAE, PAE, OVE and varicocele are hospital referral pathways.
 - **Content copied from the live site:** Our radiologists, Our clinics (Roxburgh Park, Deer Park, Bacchus Marsh, Taylors Lakes) and About us.
@@ -72,3 +72,23 @@ The headshots come from `https://media.base44.com/images/public/69a9f3dc05d4f7f2
 ## Publishing
 
 Commit and push to `main`; GitHub Pages redeploys in about a minute.
+
+## Current state (handoff)
+
+**Live:** https://drgmitreski.github.io/inone-mockup/ (GitHub Pages from `main`). Build with `python3 source/build.py`; never hand-edit `index.html`.
+
+**Pages added since the redesign:** Costs & billing (`Costs`), Screening enquiry questionnaire (`Screening-Enquiry`, logic in `source/questionnaire.js`), Work with us expression of interest (`Work-With-Us`, `source/workwithus.js`), and Our people (`Radiologists.dc.html`, route `people`, tabs in `source/people.js`: Radiologists, Radiographers, Sonographers, Admin & support). Mohammed (Founder & CEO) is in About → Meet the founder.
+
+**Billing model (Goran):** most CT, ultrasound, X-ray, DEXA and MRI are bulk billed (valid referral + Medicare card). Gaps apply to selected ultrasound and CT studies, procedures, and screening. Screening is fully out of pocket and quoted by phone after an enquiry. Concession/pension card holders are bulk billed on rebateable scans. **No dollar figures are published (competitors can see them):** gap rows say "Price on booking", screening says "Price on enquiry".
+
+**Mobile rules:** home fits one screen with no scrolling (two boxes side by side, one-line titles). Four-tab menus are an iOS-style segmented control; six-tab menus scroll sideways. Page gutter is 20px. Clinician header keeps Referral/Clinical portal buttons.
+
+**Logo:** navy wordmark, three-segment ring with the lilac segment top-right, larger lilac IMAGING (white variant on the dark clinician header). Only drawn in `Header.dc.html`.
+
+**Open items (waiting on Goran):**
+- Radiologists' post-nominals (only FRANZCR is stated on the site; do not guess others).
+- Roles, bios, photos and surnames for radiographers (Dev, Will, Joey) and sonographers (Lidia, Will, Janet).
+- Admin & support: names/photos; currently three role cards.
+- Real photography. The CT-room and original reception images look AI-generated; Goran feels the site still "screams AI" (gradients, pills, Inter everywhere, no real photos). A flat navy/serif "v2" preview was tried and rejected, then deleted. Plain page headlines from that round were kept.
+- Forms (enquiry, work with us) do not send anything yet; need a backend or email service.
+- `[CONFIRM]` placeholders remain in copy (eligible cards, report-in-fee, call-back timing, etc.).
